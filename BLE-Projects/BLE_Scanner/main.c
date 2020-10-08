@@ -210,37 +210,6 @@ static void scan_evt_handler(scan_evt_t const * p_scan_evt)
     if (address_list_contains(p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr) != false)
         return;
     
-    //uint16_t offset = 0;
-    //uint16_t length = ble_advdata_search(p_scan_evt->params.filter_match.p_adv_report->data.p_data, p_scan_evt->params.filter_match.p_adv_report->data.len, &offset, BLE_GAP_AD_TYPE_SERVICE_DATA_128BIT_UUID);
-    
-    //NRF_LOG_INFO("%s",p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr);
-
-  
-    //address_list_add(p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr);
-
-    /*switch (p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr_type) {
-        case BLE_GAP_ADDR_TYPE_PUBLIC:
-            NRF_LOG_INFO("address type BLE_GAP_ADDR_TYPE_PUBLIC");
-            break;
-        case BLE_GAP_ADDR_TYPE_RANDOM_STATIC:
-            NRF_LOG_INFO("address type BLE_GAP_ADDR_TYPE_RANDOM_STATIC");
-            break;
-        case BLE_GAP_ADDR_TYPE_RANDOM_PRIVATE_RESOLVABLE:
-            NRF_LOG_INFO("address type BLE_GAP_ADDR_TYPE_RANDOM_PRIVATE_RESOLVABLE");
-            break;
-        case BLE_GAP_ADDR_TYPE_RANDOM_PRIVATE_NON_RESOLVABLE:
-            NRF_LOG_INFO("address type BLE_GAP_ADDR_TYPE_RANDOM_PRIVATE_NON_RESOLVABLE");
-            break;
-        case BLE_GAP_ADDR_TYPE_ANONYMOUS:
-            NRF_LOG_INFO("address type BLE_GAP_ADDR_TYPE_ANONYMOUS");
-            break;
-    }*/
-    //NRF_LOG_INFO("%s", p_scan_evt->params.filter_match.p_adv_report);
-
-    //print_address(p_scan_evt->params.filter_match.p_adv_report);
-    //print_name(p_scan_evt->params.filter_match.p_adv_report);
-    //NRF_LOG_INFO("rssi: %d", p_scan_evt->params.filter_match.p_adv_report->rssi);
-    //print_manufacturer_data(p_scan_evt->params.filter_match.p_adv_report);
     add_uuid_data(p_scan_evt->params.filter_match.p_adv_report);
 }
 
