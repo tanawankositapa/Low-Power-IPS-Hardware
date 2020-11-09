@@ -1,7 +1,7 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_drv_clock.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.c \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_clock.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \

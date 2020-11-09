@@ -1,8 +1,8 @@
 Output/ble_heart_rate\ Debug/Obj/SEGGER_RTT_Syscalls_SES.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
  sdk_config.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Conf.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/components/libraries/util/app_util_platform.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \

@@ -53,6 +53,30 @@
 //#include "ble_bas.h"
 #include "Battery Level/battery_voltage.h"
 
+#include <string.h>
+#include "board.h"
+#include "nordic_common.h"
+#include "nrf.h"
+#include "utils.h"
+#include "ble_hci.h"
+#include "ble_advertising.h"
+#include "ble_db_discovery.h"
+#include "ble_conn_params.h"
+#include "nrf_sdh_soc.h"
+#include "nrf_fstorage.h"
+#include "nrf_ble_gatt.h"
+#include "app_timer.h"
+#include "ble_nus.h"
+#include "app_uart.h"
+#include "app_util_platform.h"
+#include "bsp_btn_ble.h"
+#include "peer_manager.h"
+#include "custom_board.h"
+#include "nrf_drv_twi.h"
+
+Ble_scanRsp_t m_bls_scan_rsp[10];
+uint8_t rspNum = 0;
+
 #define APP_BLE_CONN_CFG_TAG        1                                   /**< A tag identifying the SoftDevice BLE configuration. */
 #define SCAN_DURATION_WITELIST      3000                                /**< Duration of the scanning in units of 10 milliseconds. */
 #define DEV_NAME_LEN                ((BLE_GAP_ADV_SET_DATA_SIZE_MAX + 1) - \
@@ -67,6 +91,10 @@ uint8_t uuid128[16];
 uint8_t address_list[MAX_ADDRESS_COUNT][BLE_GAP_ADDR_LEN] = {0};
 int rssi_list[MAX_ADDRESS_COUNT] ={0};
 int address_list_length = 0;
+
+lora_cfg_t		g_lora_cfg;																													/**< lorab board config param.*/
+bool loraconfigupdataflg = false;
+
 
 /**< Scan parameters requested for scanning and connection. */
 static ble_gap_scan_params_t const m_scan_param =
@@ -83,6 +111,36 @@ static ble_gap_scan_params_t const m_scan_param =
  *
  * @details Initializes the SoftDevice and the BLE event interrupt.
  */
+ int set_handler(int argc, char* argv[], lora_cfg_t* cfg_info)
+{
+    
+    NRF_LOG_INFO("%s=%s", argv[0], argv[1]);
+    
+    if (strcmp(argv[0], "dev_eui") == 0) {
+        StrToHex((char *)cfg_info->dev_eui, argv[1], 8);
+    }
+    else if (strcmp(argv[0], "app_eui") == 0) {
+        StrToHex((char *)cfg_info->app_eui, argv[1], 8);
+    }
+    else if (strcmp(argv[0], "app_key") == 0) {
+        StrToHex((char *)cfg_info->app_key, argv[1], 16);
+    }
+    else if (strcmp(argv[0], "dev_addr") == 0) {
+        cfg_info->dev_addr = strtoul(argv[1], NULL, 16);
+    }
+    else if (strcmp(argv[0], "nwkskey") == 0) {
+        StrToHex((char *)cfg_info->nwkskey, argv[1], 16);
+    }
+    else if (strcmp(argv[0], "appskey") == 0) {
+        StrToHex((char *)cfg_info->appskey, argv[1], 16);
+    }
+    else
+    {
+        return -1;  
+    }
+    return 0;
+}
+
 static void ble_stack_init(void)
 {
     ret_code_t err_code;
@@ -107,6 +165,37 @@ static void scan_start(void)
 {
     NRF_LOG_INFO("Starting scan.");
     APP_ERROR_CHECK(nrf_ble_scan_start(&m_scan));
+}
+
+void add_scan_rsp_list(const uint8_t* name, const uint8_t* mac, int8_t rssi)
+{
+    uint8_t num = rspNum;
+    uint8_t nullmac[6] = {0};
+    uint8_t i;
+    
+    if (num == 0) {
+        memcpy(m_bls_scan_rsp[0].bleMac, mac, 6);
+        strcpy((char*)m_bls_scan_rsp[0].bleName, (char*)name);
+        m_bls_scan_rsp[0].bleRssi = rssi;
+        rspNum = 1;
+	//printf("add scan_rsp to list 0\r\n");
+    }
+    else if (num < 10) {
+        for(i=0; i<num; i++){
+            if(0 == memcmp(m_bls_scan_rsp[i].bleMac, mac, 6))
+                return;
+            
+            if (0 == memcmp(m_bls_scan_rsp[i].bleMac, nullmac, 6))
+            {
+                memcpy(m_bls_scan_rsp[i].bleMac, mac, 6);
+                strcpy((char*)m_bls_scan_rsp[i].bleName, (char*)name);
+                m_bls_scan_rsp[i].bleRssi = rssi;
+                rspNum++;
+                return;
+                //printf("add scan_rsp to list %d\r\n",i);
+            }
+        }
+    }
 }
 
 bool address_list_contains(const uint8_t address[]) {
@@ -197,6 +286,21 @@ void clear_data(){
   memset(rssi_list,0,sizeof(rssi_list));
 }
 
+void nRF_lora_init()
+{
+    /* load lora configuration*/
+    u_fs_init();
+    memset((uint8_t*)&g_lora_cfg,0,sizeof(g_lora_cfg));
+    u_fs_read_lora_cfg(&g_lora_cfg);
+    u_fs_check_lora_cfg(&g_lora_cfg);
+    lora_init();
+    printf("LoRa init success.\r\n");
+}
+void power_manage(void)
+{
+    uint32_t err_code = sd_app_evt_wait();
+    APP_ERROR_CHECK(err_code);
+}
 static void scan_evt_handler(scan_evt_t const * p_scan_evt)
 {
 //  ้ถ้า scan แล้วไม่เจอในเวลาที่กำหนด ให้ timeout แล้ว scan ใหม่
@@ -211,6 +315,7 @@ static void scan_evt_handler(scan_evt_t const * p_scan_evt)
         return;
     
     add_uuid_data(p_scan_evt->params.filter_match.p_adv_report);
+    add_scan_rsp_list(p_scan_evt->params.filter_match.p_adv_report->data.p_data[9],p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr,p_scan_evt->params.filter_match.p_adv_report->rssi);
 }
 
 /**@brief Function for initialization scanning and setting filters.
@@ -241,6 +346,8 @@ int main(void)
     ble_stack_init();
     scan_init();
     battery_voltage_init();
+    nRF_lora_init();
+
     // Start execution.
     NRF_LOG_INFO("Start scan");
     scan_start();
@@ -248,7 +355,18 @@ int main(void)
     // Enter main loop.
     for (;;)
     {
+        lora_process();
+
         NRF_LOG_FLUSH();
+        if (!NRF_LOG_PROCESS())
+        {
+            power_manage();
+        }
+        if(loraconfigupdataflg)
+        {
+            u_fs_write_lora_cfg(&g_lora_cfg);
+            loraconfigupdataflg = false;
+        }
 
        
     }

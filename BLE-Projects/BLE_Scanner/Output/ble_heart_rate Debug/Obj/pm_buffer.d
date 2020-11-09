@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/pm_buffer.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\pm_buffer.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\pm_buffer.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -29,6 +29,6 @@ Output/ble_heart_rate\ Debug/Obj/pm_buffer.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\pm_buffer.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\pm_buffer.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/libraries/atomic_flags/nrf_atflags.h

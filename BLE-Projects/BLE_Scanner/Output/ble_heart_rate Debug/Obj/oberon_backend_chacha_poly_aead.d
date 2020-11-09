@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/oberon_backend_chacha_poly_aead.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\oberon\oberon_backend_chacha_poly_aead.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\oberon\oberon_backend_chacha_poly_aead.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -29,4 +29,4 @@ Output/ble_heart_rate\ Debug/Obj/oberon_backend_chacha_poly_aead.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\oberon\oberon_backend_chacha_poly_aead.h
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\oberon\oberon_backend_chacha_poly_aead.h

@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/app_timer2.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\app_timer2.c \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\app_timer.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\app_timer2.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\app_timer.h \
  sdk_config.h ../nRF5_SDK_current/components/libraries/util/app_error.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
@@ -68,5 +68,5 @@ Output/ble_heart_rate\ Debug/Obj/app_timer2.o: \
  ../nRF5_SDK_current/components/libraries/strerror/nrf_strerror.h \
  ../nRF5_SDK_current/components/libraries/log/src/nrf_log_internal.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\drv_rtc.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\timer\drv_rtc.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_rtc.h

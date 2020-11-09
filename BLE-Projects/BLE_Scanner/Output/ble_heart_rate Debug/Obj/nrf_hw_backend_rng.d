@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_hw_backend_rng.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\nrf_hw\nrf_hw_backend_rng.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\nrf_hw\nrf_hw_backend_rng.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \

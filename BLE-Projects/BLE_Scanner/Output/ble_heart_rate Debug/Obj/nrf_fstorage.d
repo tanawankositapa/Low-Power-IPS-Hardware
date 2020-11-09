@@ -1,7 +1,7 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_fstorage.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fstorage\nrf_fstorage.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fstorage\nrf_fstorage.c \
  sdk_config.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fstorage\nrf_fstorage.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fstorage\nrf_fstorage.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \

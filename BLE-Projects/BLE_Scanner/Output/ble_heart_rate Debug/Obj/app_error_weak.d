@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/app_error_weak.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error_weak.c \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error_weak.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
@@ -17,10 +17,10 @@ Output/ble_heart_rate\ Debug/Obj/app_error_weak.o: \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\sdk_errors.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\nordic_common.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error_weak.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\nordic_common.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_error_weak.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
@@ -57,7 +57,7 @@ Output/ble_heart_rate\ Debug/Obj/app_error_weak.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error_soc.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_nvic.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_util_platform.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\util\app_util_platform.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_sdm.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error_sdm.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h

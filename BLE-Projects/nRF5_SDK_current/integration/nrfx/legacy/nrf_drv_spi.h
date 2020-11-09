@@ -41,6 +41,10 @@
 #ifndef NRF_DRV_SPI_H__
 #define NRF_DRV_SPI_H__
 
+#define SPI0_INSTANCE_INDEX 0
+#define SPI0_IRQ            SPI0_TWI0_IRQn
+#define SPI0_IRQ_HANDLER    SPI0_TWI0_IRQHandler
+
 #include <nrfx.h>
 #ifdef SPIM_PRESENT
     #include <nrfx_spim.h>
@@ -82,6 +86,7 @@
     #define NRF_SPI_MODE_3              NRF_SPIM_MODE_3
     #define NRF_SPI_BIT_ORDER_MSB_FIRST NRF_SPIM_BIT_ORDER_MSB_FIRST
     #define NRF_SPI_BIT_ORDER_LSB_FIRST NRF_SPIM_BIT_ORDER_LSB_FIRST
+
 #endif
 
 #ifdef __cplusplus
@@ -110,7 +115,11 @@ typedef struct
         nrfx_spi_t  spi;
 #endif
     } u;
-    bool    use_easy_dma;
+    
+    void *    p_registers;  ///< Pointer to the structure with SPI/SPIM peripheral instance registers.
+    IRQn_Type irq;          ///< SPI/SPIM peripheral instance IRQ number.
+    uint8_t   drv_inst_idx; ///< Driver instance index.
+    bool      use_easy_dma; ///< True if the peripheral with EasyDMA (SPIM) shall be used.
 } nrf_drv_spi_t;
 
 /**
@@ -207,6 +216,7 @@ typedef struct
     nrf_drv_spi_mode_t      mode;      ///< SPI mode.
     nrf_drv_spi_bit_order_t bit_order; ///< SPI bit order.
 } nrf_drv_spi_config_t;
+
 
 /**
  * @brief SPI master instance default configuration.

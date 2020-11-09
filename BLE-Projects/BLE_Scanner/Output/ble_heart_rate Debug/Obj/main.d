@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/main.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\main.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\main.c \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
@@ -72,4 +72,81 @@ Output/ble_heart_rate\ Debug/Obj/main.o: \
  ../nRF5_SDK_current/components/ble/nrf_ble_scan/nrf_ble_scan.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
  ../nRF5_SDK_current/components/ble/common/ble_advdata.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level/battery_voltage.h
+ D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level/battery_voltage.h \
+ ../BLE_Scanner/Board/lora_board/board.h \
+ ../nRF5_SDK_current/components/libraries/util/app_error.h \
+ ../BLE_Scanner/Board/lora_board/utilities.h \
+ ../BLE_Scanner/Board/lora_board/timer.h \
+ ../nRF5_SDK_current/components/libraries/timer/app_timer.h \
+ ../nRF5_SDK_current/components/libraries/sortlist/nrf_sortlist.h \
+ ../BLE_Scanner/Board/lora_board/gpio-board.h \
+ ../BLE_Scanner/Board/lora_board/pinName-board.h \
+ ../BLE_Scanner/Board/lora_board/spi-board.h \
+ ../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.h \
+ ../nRF5_SDK_current/modules/nrfx/nrfx.h \
+ ../nRF5_SDK_current/integration/nrfx/nrfx_config.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \
+ ../nRF5_SDK_current/modules/nrfx/mdk/nrf_peripherals.h \
+ ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840_peripherals.h \
+ ../nRF5_SDK_current/integration/nrfx/nrfx_glue.h \
+ ../nRF5_SDK_current/integration/nrfx/legacy/apply_old_config.h \
+ ../nRF5_SDK_current/modules/nrfx/soc/nrfx_irqs.h \
+ ../nRF5_SDK_current/modules/nrfx/soc/nrfx_irqs_nrf52840.h \
+ ../nRF5_SDK_current/modules/nrfx/soc/nrfx_coredep.h \
+ ../nRF5_SDK_current/modules/nrfx/soc/nrfx_atomic.h \
+ ../nRF5_SDK_current/components/libraries/util/sdk_resources.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_sd_def.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_errors.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_spim.h \
+ ../nRF5_SDK_current/modules/nrfx/hal/nrf_spim.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_spi.h \
+ ../nRF5_SDK_current/modules/nrfx/hal/nrf_spi.h \
+ ../BLE_Scanner/Board/lora_board/rtc-board.h \
+ ../BLE_Scanner/LoRa_Lib/radio/radio.h \
+ ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276.h \
+ ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-Fsk.h \
+ ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-LoRa.h \
+ ../BLE_Scanner/Board/lora_board/sx1276-board.h \
+ ../nRF5_SDK_current/components/boards/boards.h \
+ ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
+ ../nRF5_SDK_current/components/boards/pca10056.h \
+ ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage.h \
+ ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage_sd.h \
+ ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage.h \
+ ../BLE_Scanner/Board/custom_board.h \
+ ../nRF5_SDK_current/components/libraries/uart/app_uart.h \
+ ../nRF5_SDK_current/external/segger_rtt/SEGGER_RTT.h \
+ ../nRF5_SDK_current/external/segger_rtt/SEGGER_RTT_Conf.h \
+ Commissioning.h ../BLE_Scanner/Board/lora_board/utils.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/ble_hci.h \
+ ../nRF5_SDK_current/components/ble/ble_advertising/ble_advertising.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gattc.h \
+ ../nRF5_SDK_current/components/ble/ble_db_discovery/ble_db_discovery.h \
+ ../nRF5_SDK_current/components/ble/common/ble_gatt_db.h \
+ ../nRF5_SDK_current/components/ble/nrf_ble_gq/nrf_ble_gq.h \
+ ../nRF5_SDK_current/components/libraries/queue/nrf_queue.h \
+ ../nRF5_SDK_current/components/ble/common/ble_conn_params.h \
+ ../nRF5_SDK_current/components/ble/common/ble_srv_common.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/ble_types.h \
+ ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gatt.h \
+ ../nRF5_SDK_current/components/softdevice/common/nrf_sdh_soc.h \
+ ../nRF5_SDK_current/components/ble/nrf_ble_gatt/nrf_ble_gatt.h \
+ ../nRF5_SDK_current/components/ble/ble_services/ble_nus/ble_nus.h \
+ ../nRF5_SDK_current/components/ble/common/ble_srv_common.h \
+ ../nRF5_SDK_current/components/ble/ble_link_ctx_manager/ble_link_ctx_manager.h \
+ ../nRF5_SDK_current/components/ble/common/ble_conn_state.h \
+ ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
+ ../nRF5_SDK_current/components/libraries/bsp/bsp_btn_ble.h \
+ ../nRF5_SDK_current/components/libraries/bsp/bsp.h \
+ ../nRF5_SDK_current/components/libraries/button/app_button.h \
+ ../nRF5_SDK_current/components/ble/peer_manager/peer_manager.h \
+ ../nRF5_SDK_current/components/ble/peer_manager/peer_manager_types.h \
+ ../nRF5_SDK_current/components/ble/peer_manager/peer_database.h \
+ ../nRF5_SDK_current/components/ble/peer_manager/peer_manager_internal.h \
+ ../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_twi.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_twim.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_twi_twim.h \
+ ../nRF5_SDK_current/modules/nrfx/hal/nrf_twim.h \
+ ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_twi.h \
+ ../nRF5_SDK_current/modules/nrfx/hal/nrf_twi.h

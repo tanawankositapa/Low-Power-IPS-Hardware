@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/ble_db_discovery.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_db_discovery\ble_db_discovery.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_db_discovery\ble_db_discovery.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/ble_heart_rate\ Debug/Obj/ble_db_discovery.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_db_discovery\ble_db_discovery.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_db_discovery\ble_db_discovery.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \

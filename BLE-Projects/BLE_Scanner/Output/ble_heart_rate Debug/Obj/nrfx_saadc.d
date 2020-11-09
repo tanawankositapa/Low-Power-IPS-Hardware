@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrfx_saadc.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\drivers\src\nrfx_saadc.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\drivers\src\nrfx_saadc.c \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \

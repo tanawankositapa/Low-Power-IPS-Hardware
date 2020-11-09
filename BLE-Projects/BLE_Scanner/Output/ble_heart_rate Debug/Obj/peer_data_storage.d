@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/peer_data_storage.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/ble_heart_rate\ Debug/Obj/peer_data_storage.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
@@ -38,7 +38,7 @@ Output/ble_heart_rate\ Debug/Obj/peer_data_storage.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_ranges.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_types.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_err.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_types.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_types.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_hci.h \
  ../nRF5_SDK_current/components/ble/common/ble_gatt_db.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble.h \
@@ -56,8 +56,8 @@ Output/ble_heart_rate\ Debug/Obj/peer_data_storage.o: \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_internal.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_id.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_internal.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_id.h \
  ../nRF5_SDK_current/components/libraries/fds/fds.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \

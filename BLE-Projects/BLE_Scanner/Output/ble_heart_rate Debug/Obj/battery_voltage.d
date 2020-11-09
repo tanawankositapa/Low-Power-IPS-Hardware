@@ -1,7 +1,7 @@
 Output/ble_heart_rate\ Debug/Obj/battery_voltage.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.c \
  sdk_config.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_saadc.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_saadc.h \

@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/platform_util.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\mbedtls\library\platform_util.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\mbedtls\library\platform_util.c \
  ../nRF5_SDK_current/external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h \
  sdk_config.h \
  ../nRF5_SDK_current/external/mbedtls/include/mbedtls/check_config.h \

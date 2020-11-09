@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/fds.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/ble_heart_rate\ Debug/Obj/fds.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/libraries/util/app_util_platform.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h \
@@ -40,7 +40,7 @@ Output/ble_heart_rate\ Debug/Obj/fds.o: \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds_internal_defs.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\fds\fds_internal_defs.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/libraries/atomic_fifo/nrf_atfifo.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \

@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/bsp.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp.c \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/components/boards/boards.h \
@@ -57,7 +57,7 @@ Output/ble_heart_rate\ Debug/Obj/bsp.o: \
  ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/components/libraries/button/app_button.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp_config.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\bsp\bsp_config.h \
  ../nRF5_SDK_current/components/libraries/timer/app_timer.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \

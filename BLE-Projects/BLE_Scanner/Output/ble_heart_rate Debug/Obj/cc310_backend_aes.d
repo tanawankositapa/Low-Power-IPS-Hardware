@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/cc310_backend_aes.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_aes.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_aes.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -36,7 +36,7 @@ Output/ble_heart_rate\ Debug/Obj/cc310_backend_aes.o: \
  ../nRF5_SDK_current/external/nrf_cc310/include/crys_error.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/ssi_pal_types.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/ssi_pal_types_plat.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_aes.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_aes.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/ssi_aes.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/ssi_aes_error.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/ssi_aes_defs.h \
@@ -45,8 +45,8 @@ Output/ble_heart_rate\ Debug/Obj/cc310_backend_aes.o: \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_types.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_aes_shared.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_types.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../nRF5_SDK_current/components/libraries/mutex/nrf_mtx.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h

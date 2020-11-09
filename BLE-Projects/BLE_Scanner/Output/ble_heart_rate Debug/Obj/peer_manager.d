@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/peer_manager.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -31,7 +31,7 @@ Output/ble_heart_rate\ Debug/Obj/peer_manager.o: \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_err.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_err.h \
@@ -44,7 +44,7 @@ Output/ble_heart_rate\ Debug/Obj/peer_manager.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gattc.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gatts.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_types.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_types.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_hci.h \
  ../nRF5_SDK_current/components/ble/common/ble_gatt_db.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gattc.h \
@@ -56,15 +56,15 @@ Output/ble_heart_rate\ Debug/Obj/peer_manager.o: \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_database.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_internal.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_database.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_manager_internal.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\security_manager.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\security_dispatcher.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\gatt_cache_manager.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\gatts_cache_manager.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\id_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\security_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\security_dispatcher.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\gatt_cache_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\gatts_cache_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\peer_data_storage.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\peer_manager\id_manager.h \
  ../nRF5_SDK_current/components/ble/common/ble_conn_state.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/softdevice/common/nrf_sdh_ble.h \

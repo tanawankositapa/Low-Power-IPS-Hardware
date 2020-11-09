@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/mem_manager.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\mem_manager\mem_manager.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\mem_manager\mem_manager.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -30,7 +30,7 @@ Output/ble_heart_rate\ Debug/Obj/mem_manager.o: \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\mem_manager\mem_manager.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\mem_manager\mem_manager.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \

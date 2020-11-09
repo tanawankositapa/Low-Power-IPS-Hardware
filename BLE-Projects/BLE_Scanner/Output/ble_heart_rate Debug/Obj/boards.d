@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/boards.o: \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\boards.c \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\boards.h \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\boards.c \
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\boards.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
@@ -53,4 +53,4 @@ Output/ble_heart_rate\ Debug/Obj/boards.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_sd_def.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_errors.h \
- D:\Low\ Power\ Platform\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\pca10056.h
+ D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\boards\pca10056.h
