@@ -328,7 +328,7 @@ nrfx_err_t nrfx_gpiote_out_init(nrfx_gpiote_pin_t                pin,
 {
     NRFX_ASSERT(nrf_gpio_pin_present_check(pin));
     NRFX_ASSERT(m_cb.state == NRFX_DRV_STATE_INITIALIZED);
-    
+    printf("error : %d",&m_cb.state);
     NRFX_ASSERT(p_config);
 
     nrfx_err_t err_code = NRFX_SUCCESS;

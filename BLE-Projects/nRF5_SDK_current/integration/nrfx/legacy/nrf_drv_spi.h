@@ -129,10 +129,10 @@ typedef struct
  */
 #define NRF_DRV_SPI_INSTANCE(id)    NRF_DRV_SPI_INSTANCE_(id)
 #define NRF_DRV_SPI_INSTANCE_(id)   NRF_DRV_SPI_INSTANCE_ ## id
-#if NRFX_CHECK(NRFX_SPIM0_ENABLED)
+#if !NRFX_CHECK(NRFX_SPIM0_ENABLED)
     #define NRF_DRV_SPI_INSTANCE_0 \
         { 0, { .spim = NRFX_SPIM_INSTANCE(0) }, true }
-#elif NRFX_CHECK(NRFX_SPI0_ENABLED)
+#elif !NRFX_CHECK(NRFX_SPI0_ENABLED)
     #define NRF_DRV_SPI_INSTANCE_0 \
         { 0, { .spi = NRFX_SPI_INSTANCE(0) }, false }
 #endif

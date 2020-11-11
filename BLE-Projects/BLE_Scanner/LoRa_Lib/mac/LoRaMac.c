@@ -2331,7 +2331,7 @@ LoRaMacStatus_t LoRaMacInitialization( LoRaMacPrimitives_t *primitives, LoRaMacC
     {
         return LORAMAC_STATUS_REGION_NOT_SUPPORTED;
     }
-
+    
     LoRaMacPrimitives = primitives;
     LoRaMacCallbacks = callbacks;
     LoRaMacRegion = region;
@@ -2344,79 +2344,79 @@ LoRaMacStatus_t LoRaMacInitialization( LoRaMacPrimitives_t *primitives, LoRaMacC
     JoinRequestTrials = 0;
     MaxJoinRequestTrials = 1;
     RepeaterSupport = false;
-
+    printf("Arrived");
     // Reset duty cycle times
     AggregatedLastTxDoneTime = 0;
     AggregatedTimeOff = 0;
-
+    printf("Arrived1");
     // Reset to defaults
     getPhy.Attribute = PHY_DUTY_CYCLE;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     DutyCycleOn = ( bool ) phyParam.Value;
-
+    printf("Arrived2");
     getPhy.Attribute = PHY_DEF_TX_POWER;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.ChannelsTxPower = phyParam.Value;
-
+    printf("Arrive3");
     getPhy.Attribute = PHY_DEF_TX_DR;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.ChannelsDatarate = phyParam.Value;
-
+    printf("Arrived4");
     getPhy.Attribute = PHY_MAX_RX_WINDOW;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.MaxRxWindow = phyParam.Value;
-
+    printf("Arrived5");
     getPhy.Attribute = PHY_RECEIVE_DELAY1;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.ReceiveDelay1 = phyParam.Value;
-
+    printf("Arrived6");
     getPhy.Attribute = PHY_RECEIVE_DELAY2;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.ReceiveDelay2 = phyParam.Value;
-
+    printf("Arrived7");
     getPhy.Attribute = PHY_JOIN_ACCEPT_DELAY1;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.JoinAcceptDelay1 = phyParam.Value;
-
+    printf("Arrived8");
     getPhy.Attribute = PHY_JOIN_ACCEPT_DELAY2;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.JoinAcceptDelay2 = phyParam.Value;
-
+    printf("Arrived9");
     getPhy.Attribute = PHY_DEF_DR1_OFFSET;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.Rx1DrOffset = phyParam.Value;
-
+    printf("Arrived10");
     getPhy.Attribute = PHY_DEF_RX2_FREQUENCY;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.Rx2Channel.Frequency = phyParam.Value;
-
+    printf("Arrived11");
     getPhy.Attribute = PHY_DEF_RX2_DR;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.Rx2Channel.Datarate = phyParam.Value;
-
+    printf("Arrived12");
     getPhy.Attribute = PHY_DEF_UPLINK_DWELL_TIME;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.UplinkDwellTime = phyParam.Value;
-
+    printf("Arrived13");
     getPhy.Attribute = PHY_DEF_DOWNLINK_DWELL_TIME;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.DownlinkDwellTime = phyParam.Value;
-
+    printf("Arrived14");
     getPhy.Attribute = PHY_DEF_MAX_EIRP;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.MaxEirp = phyParam.fValue;
-
+    printf("Arrived15");
     getPhy.Attribute = PHY_DEF_ANTENNA_GAIN;
     phyParam = RegionGetPhyParam( LoRaMacRegion, &getPhy );
     LoRaMacParamsDefaults.AntennaGain = phyParam.fValue;
-
+    printf("Arrived16");
     RegionInitDefaults( LoRaMacRegion, INIT_TYPE_INIT );
-
+    printf("Arrived17");
     // Init parameters which are not set in function ResetMacParameters
     LoRaMacParamsDefaults.ChannelsNbRep = 1;
     LoRaMacParamsDefaults.SystemMaxRxError = 10;
     LoRaMacParamsDefaults.MinRxSymbols = 6;
-
+    printf("Arrived18");
     LoRaMacParams.SystemMaxRxError = LoRaMacParamsDefaults.SystemMaxRxError;
     LoRaMacParams.MinRxSymbols = LoRaMacParamsDefaults.MinRxSymbols;
     LoRaMacParams.MaxRxWindow = LoRaMacParamsDefaults.MaxRxWindow;
@@ -2425,36 +2425,39 @@ LoRaMacStatus_t LoRaMacInitialization( LoRaMacPrimitives_t *primitives, LoRaMacC
     LoRaMacParams.JoinAcceptDelay1 = LoRaMacParamsDefaults.JoinAcceptDelay1;
     LoRaMacParams.JoinAcceptDelay2 = LoRaMacParamsDefaults.JoinAcceptDelay2;
     LoRaMacParams.ChannelsNbRep = LoRaMacParamsDefaults.ChannelsNbRep;
-
+    printf("Arrived19");
     ResetMacParameters( );
-
+    printf("Arrived20");
     // Initialize timers
     TimerInit( &MacStateCheckTimer, OnMacStateCheckTimerEvent );
     TimerSetValue( &MacStateCheckTimer, MAC_STATE_CHECK_TIMEOUT );
-
+    printf("Arrived21");
     TimerInit( &TxDelayedTimer, OnTxDelayedTimerEvent );
     TimerInit( &RxWindowTimer1, OnRxWindow1TimerEvent );
     TimerInit( &RxWindowTimer2, OnRxWindow2TimerEvent );
     TimerInit( &AckTimeoutTimer, OnAckTimeoutTimerEvent );
-
+    printf("Arrived22");
     // Store the current initialization time
     LoRaMacInitializationTime = TimerGetCurrentTime( );
-
+    printf("Arrived23");
     // Initialize Radio driver
     RadioEvents.TxDone = OnRadioTxDone;
+    printf("Arrived24");
     RadioEvents.RxDone = OnRadioRxDone;
+    printf("Arrived25");
     RadioEvents.RxError = OnRadioRxError;
     RadioEvents.TxTimeout = OnRadioTxTimeout;
     RadioEvents.RxTimeout = OnRadioRxTimeout;
+    printf("Arrived26");
     Radio.Init( &RadioEvents );
-
+    printf("Arrived27");
     // Random seed initialization
     srand1( Radio.Random( ) );
-
+    
     PublicNetwork = true;
     Radio.SetPublicNetwork( PublicNetwork );
     Radio.Sleep( );
-
+//    printf("Arrived26");
     return LORAMAC_STATUS_OK;
 }
 

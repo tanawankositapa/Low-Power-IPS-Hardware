@@ -788,6 +788,7 @@ void lora_process()
             LoRaMacCallbacks.GetBatteryLevel = BoardGetBatteryLevel;
 #if defined( REGION_AS923 )
             LoRaMacInitialization( &LoRaMacPrimitives, &LoRaMacCallbacks, LORAMAC_REGION_AS923 );
+            printf("hELLO");
 #elif defined( REGION_AU915 )
             LoRaMacInitialization( &LoRaMacPrimitives, &LoRaMacCallbacks, LORAMAC_REGION_AU915 );
 #elif defined( REGION_CN470 )

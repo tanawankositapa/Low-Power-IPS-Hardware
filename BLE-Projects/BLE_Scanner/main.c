@@ -340,8 +340,9 @@ int main(void)
     ret_code_t err_code;
 
     err_code = NRF_LOG_INIT(NULL);
+//    printf("error : %d",&err_code);
     APP_ERROR_CHECK(err_code);
-    NRF_LOG_DEFAULT_BACKENDS_INIT();
+    NRF_LOG_DEFAULT_BACKENDS_INIT(); // print error code that checked from APP_ERROR_CHECK
 
     ble_stack_init();
     scan_init();
