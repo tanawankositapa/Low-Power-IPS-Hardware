@@ -15,7 +15,7 @@
 #include "radio.h"
 #include "sx1276/sx1276.h"
 #include "sx1276-board.h"
-
+#include "pca10056.h"
 
 #include "nrf.h"
 #include "nrf_soc.h"
@@ -58,20 +58,22 @@
 /*!
  * Pin definitions
  */
-#define RADIO_DIO_0		P7
-#define RADIO_DIO_1		P8
-#define RADIO_DIO_2		P9
-#define RADIO_DIO_3		P10
+#define RADIO_DIO_0		ARDUINO_2_PIN
+#define RADIO_DIO_1		ARDUINO_3_PIN
+#define RADIO_DIO_2		ARDUINO_4_PIN
+#define RADIO_DIO_3		ARDUINO_5_PIN
+#define RADIO_DIO_4   ARDUINO_8_PIN
+#define RADIO_DIO_5 	ARDUINO_9_PIN
 
-#define RADIO_NSS		P14
-#define RADIO_MOSI		P13
-#define RADIO_MISO		P12
-#define RADIO_SCK		P11
+#define RADIO_NSS		ARDUINO_10_PIN
+#define RADIO_MOSI  ARDUINO_11_PIN
+#define RADIO_MISO	ARDUINO_12_PIN
+#define RADIO_SCK		ARDUINO_13_PIN
 
-#define RADIO_RESET		P6
-#define RADIO_TCXO		P5
-#define RADIO_RF_CTX	        P23
-#define RADIO_RF_CPS	        P22
+#define RADIO_RESET		ARDUINO_A0_PIN
+#define RADIO_ANT_SWITCH_HF	        ARDUINO_A4_PIN
+
+#define RADIO_DIO4_B ARDUINO_A3_PIN 
 
 #define ASSERT_ERROR	0xA55EA55E
 

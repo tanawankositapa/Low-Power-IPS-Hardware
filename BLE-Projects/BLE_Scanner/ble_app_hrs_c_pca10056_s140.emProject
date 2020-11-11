@@ -248,6 +248,7 @@
       filter="*.*"
       path="Board/lora_board"
       recurse="No" />
+    <configuration Name="Release" c_preprocessor_definitions="REGION_AS923" />
   </project>
   <configuration
     Name="Release"

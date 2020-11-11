@@ -1,15 +1,15 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_drv_clock.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.c \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_clock.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_clock.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -42,7 +42,7 @@ Output/ble_heart_rate\ Debug/Obj/nrf_drv_clock.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_nvic.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
@@ -60,7 +60,7 @@ Output/ble_heart_rate\ Debug/Obj/nrf_drv_clock.o: \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \
  ../nRF5_SDK_current/components/softdevice/common/nrf_sdh_soc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \

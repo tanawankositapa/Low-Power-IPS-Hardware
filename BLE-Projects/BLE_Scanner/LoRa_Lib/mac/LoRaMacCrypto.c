@@ -21,8 +21,8 @@ Maintainer: Miguel Luis ( Semtech ), Gregory Cristian ( Semtech ) and Daniel Jae
 #include <stdint.h>
 #include "utilities.h"
 
-#include "D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\crypto\aes.h"
-#include "D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\crypto\cmac.h"
+#include "../crypto/aes.h"
+#include "../crypto/cmac.h"
 
 #include "LoRaMacCrypto.h"
 

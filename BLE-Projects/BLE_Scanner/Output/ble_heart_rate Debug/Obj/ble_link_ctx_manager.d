@@ -1,9 +1,9 @@
 Output/ble_heart_rate\ Debug/Obj/ble_link_ctx_manager.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.c \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/components/ble/common/ble_conn_state.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
@@ -31,8 +31,8 @@ Output/ble_heart_rate\ Debug/Obj/ble_link_ctx_manager.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
@@ -40,7 +40,7 @@ Output/ble_heart_rate\ Debug/Obj/ble_link_ctx_manager.o: \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf52/nrf_mbr.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \

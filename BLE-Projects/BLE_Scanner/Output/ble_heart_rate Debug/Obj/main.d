@@ -1,14 +1,14 @@
 Output/ble_heart_rate\ Debug/Obj/main.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\main.c \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\main.c \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  ../nRF5_SDK_current/components/softdevice/common/nrf_sdh.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  sdk_config.h ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section_iter.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
@@ -44,7 +44,7 @@ Output/ble_heart_rate\ Debug/Obj/main.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gatts.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
@@ -60,7 +60,7 @@ Output/ble_heart_rate\ Debug/Obj/main.o: \
  ../nRF5_SDK_current/components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_backend_interface.h \
  ../nRF5_SDK_current/components/libraries/memobj/nrf_memobj.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
  ../nRF5_SDK_current/components/libraries/balloc/nrf_balloc.h \
  ../nRF5_SDK_current/components/libraries/util/app_util_platform.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h \
@@ -72,7 +72,7 @@ Output/ble_heart_rate\ Debug/Obj/main.o: \
  ../nRF5_SDK_current/components/ble/nrf_ble_scan/nrf_ble_scan.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
  ../nRF5_SDK_current/components/ble/common/ble_advdata.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level/battery_voltage.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level/battery_voltage.h \
  ../BLE_Scanner/Board/lora_board/board.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
  ../BLE_Scanner/Board/lora_board/utilities.h \
@@ -108,8 +108,9 @@ Output/ble_heart_rate\ Debug/Obj/main.o: \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-Fsk.h \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-LoRa.h \
  ../BLE_Scanner/Board/lora_board/sx1276-board.h \
- ../nRF5_SDK_current/components/boards/boards.h \
+ ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
+ ../nRF5_SDK_current/components/boards/boards.h \
  ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage.h \
  ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage_sd.h \

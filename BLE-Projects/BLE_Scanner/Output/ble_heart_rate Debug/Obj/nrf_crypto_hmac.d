@@ -1,10 +1,10 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_crypto_hmac.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
@@ -12,7 +12,7 @@ Output/ble_heart_rate\ Debug/Obj/nrf_crypto_hmac.o: \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -39,10 +39,10 @@ Output/ble_heart_rate\ Debug/Obj/nrf_crypto_hmac.o: \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_types.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac_backend.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac_shared.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_types.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac_backend.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_hmac_shared.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/mbedtls/mbedtls_backend_hmac.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/cc310/cc310_backend_hmac.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_hmac_shared.h \
@@ -54,9 +54,9 @@ Output/ble_heart_rate\ Debug/Obj/nrf_crypto_hmac.o: \
  ../nRF5_SDK_current/external/nrf_cc310/include/crys_hash_defs.h \
  ../nRF5_SDK_current/external/nrf_cc310/include/crys_hmac_defs.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/oberon/oberon_backend_hmac.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_error.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_init.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_mem.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_error.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_init.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_mem.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_alloca.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_shared.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\nrf_crypto_shared.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h

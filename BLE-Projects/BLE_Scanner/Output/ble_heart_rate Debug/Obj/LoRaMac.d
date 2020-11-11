@@ -1,11 +1,11 @@
 Output/ble_heart_rate\ Debug/Obj/LoRaMac.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMac.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMac.c \
  ../BLE_Scanner/Board/lora_board/board.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -24,11 +24,11 @@ Output/ble_heart_rate\ Debug/Obj/LoRaMac.o: \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
  sdk_config.h ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf52/nrf_mbr.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
@@ -42,7 +42,7 @@ Output/ble_heart_rate\ Debug/Obj/LoRaMac.o: \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
  ../BLE_Scanner/Board/lora_board/utilities.h \
  ../BLE_Scanner/Board/lora_board/timer.h \
  ../nRF5_SDK_current/components/libraries/timer/app_timer.h \
@@ -84,8 +84,9 @@ Output/ble_heart_rate\ Debug/Obj/LoRaMac.o: \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-Fsk.h \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-LoRa.h \
  ../BLE_Scanner/Board/lora_board/sx1276-board.h \
- ../nRF5_SDK_current/components/boards/boards.h \
+ ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
+ ../nRF5_SDK_current/components/boards/boards.h \
  ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage.h \
  ../nRF5_SDK_current/components/softdevice/common/nrf_sdh.h \
@@ -109,7 +110,7 @@ Output/ble_heart_rate\ Debug/Obj/LoRaMac.o: \
  ../nRF5_SDK_current/external/segger_rtt/SEGGER_RTT.h \
  ../nRF5_SDK_current/external/segger_rtt/SEGGER_RTT_Conf.h \
  Commissioning.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMac.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\region/Region.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMacCrypto.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMacTest.h
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMac.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\region/Region.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMacCrypto.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\LoRa_Lib\mac\LoRaMacTest.h

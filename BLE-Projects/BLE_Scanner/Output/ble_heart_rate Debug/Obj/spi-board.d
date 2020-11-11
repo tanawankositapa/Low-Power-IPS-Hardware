@@ -1,11 +1,11 @@
 Output/ble_heart_rate\ Debug/Obj/spi-board.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\spi-board.c \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\board.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\spi-board.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\board.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -24,11 +24,11 @@ Output/ble_heart_rate\ Debug/Obj/spi-board.o: \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
  sdk_config.h ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf52/nrf_mbr.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
@@ -42,14 +42,14 @@ Output/ble_heart_rate\ Debug/Obj/spi-board.o: \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\utilities.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\timer.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\utilities.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\timer.h \
  ../nRF5_SDK_current/components/libraries/timer/app_timer.h \
  ../nRF5_SDK_current/components/libraries/sortlist/nrf_sortlist.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\gpio-board.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\pinName-board.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\spi-board.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\gpio-board.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\pinName-board.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\spi-board.h \
  ../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h \
@@ -78,14 +78,15 @@ Output/ble_heart_rate\ Debug/Obj/spi-board.o: \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_spim.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_spi.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_spi.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\rtc-board.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\rtc-board.h \
  ../BLE_Scanner/LoRa_Lib/radio/radio.h \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276.h \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-Fsk.h \
  ../BLE_Scanner/LoRa_Lib/radio/sx1276/sx1276Regs-LoRa.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\sx1276-board.h \
- ../nRF5_SDK_current/components/boards/boards.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Board\lora_board\sx1276-board.h \
+ ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
+ ../nRF5_SDK_current/components/boards/boards.h \
  ../nRF5_SDK_current/components/boards/pca10056.h \
  ../nRF5_SDK_current/components/libraries/fstorage/nrf_fstorage.h \
  ../nRF5_SDK_current/components/softdevice/common/nrf_sdh.h \

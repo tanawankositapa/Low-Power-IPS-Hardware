@@ -1,16 +1,16 @@
 Output/ble_heart_rate\ Debug/Obj/battery_voltage.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.c \
  sdk_config.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\BLE_Scanner\Battery\ Level\battery_voltage.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_saadc.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_saadc.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -44,7 +44,7 @@ Output/ble_heart_rate\ Debug/Obj/battery_voltage.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_nvic.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  ../nRF5_SDK_current/components/libraries/util/app_error.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdio.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
  ../nRF5_SDK_current/components/libraries/util/app_error_weak.h \
@@ -59,7 +59,7 @@ Output/ble_heart_rate\ Debug/Obj/battery_voltage.o: \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \

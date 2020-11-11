@@ -46,6 +46,8 @@
 #define SPI0_IRQ_HANDLER    SPI0_TWI0_IRQHandler
 
 #include <nrfx.h>
+#include <nrfx_spim.h>
+#include <nrfx_spi.h>
 #ifdef SPIM_PRESENT
     #include <nrfx_spim.h>
 #else
@@ -505,22 +507,22 @@ ret_code_t nrf_drv_spi_transfer(nrf_drv_spi_t const * const p_instance,
                                 uint8_t         rx_buffer_length)
 {
     ret_code_t result = 0;
-    if (NRF_DRV_SPI_USE_SPIM)
+//    if (NRF_DRV_SPI_USE_SPIM)
+//    {
+//    #ifdef SPIM_PRESENT
+//        nrfx_spim_xfer_desc_t const spim_xfer_desc =
+//        {
+//            .p_tx_buffer = p_tx_buffer,
+//            .tx_length   = tx_buffer_length,
+//            .p_rx_buffer = p_rx_buffer,
+//            .rx_length   = rx_buffer_length,
+//        };
+//        result = nrfx_spim_xfer(&p_instance->u.spim, &spim_xfer_desc, 0);
+//    #endif
+//    }
+    if (NRF_DRV_SPI_USE_SPI)
     {
-    #ifdef SPIM_PRESENT
-        nrfx_spim_xfer_desc_t const spim_xfer_desc =
-        {
-            .p_tx_buffer = p_tx_buffer,
-            .tx_length   = tx_buffer_length,
-            .p_rx_buffer = p_rx_buffer,
-            .rx_length   = rx_buffer_length,
-        };
-        result = nrfx_spim_xfer(&p_instance->u.spim, &spim_xfer_desc, 0);
-    #endif
-    }
-    else if (NRF_DRV_SPI_USE_SPI)
-    {
-    #ifdef SPI_PRESENT
+   #ifdef SPI_PRESENT
         nrfx_spi_xfer_desc_t const spi_xfer_desc =
         {
             .p_tx_buffer = p_tx_buffer,
@@ -529,7 +531,7 @@ ret_code_t nrf_drv_spi_transfer(nrf_drv_spi_t const * const p_instance,
             .rx_length   = rx_buffer_length,
         };
         result = nrfx_spi_xfer(&p_instance->u.spi, &spi_xfer_desc, 0);
-    #endif
+   #endif
     }
     return result;
 }

@@ -1,13 +1,13 @@
 Output/ble_heart_rate\ Debug/Obj/cc310_backend_eddsa.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_eddsa.c \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_eddsa.c \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_ecc.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_error.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_errors.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_error.h \
@@ -75,9 +75,9 @@ Output/ble_heart_rate\ Debug/Obj/cc310_backend_eddsa.o: \
  ../nRF5_SDK_current/components/libraries/crypto/backend/cc310/cc310_backend_eddsa.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_eddsa_shared.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecc.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecc.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../nRF5_SDK_current/components/libraries/mutex/nrf_mtx.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \

@@ -1,11 +1,11 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_atfifo.o: \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo.c \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo.c \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
- C:/Users/mone/ncs/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
+ D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stddef.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
@@ -22,7 +22,7 @@ Output/ble_heart_rate\ Debug/Obj/nrf_atfifo.o: \
  ../nRF5_SDK_current/modules/nrfx/mdk/compiler_abstraction.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf52/nrf_mbr.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo.h \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
@@ -31,7 +31,7 @@ Output/ble_heart_rate\ Debug/Obj/nrf_atfifo.o: \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- D:\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
+ D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_os.h \
