@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\mlm32l07x01\NUCLEO_CUBE_LORA.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\mlm32l07x01\NUCLEO_CUBE_LORA.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Nov 14 15:56:10 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Nov 14 18:39:54 2020
 <BR><P>
 <H3>Maximum Stack Usage =        832 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -324,6 +324,7 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vcom_IoInit
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vcom_IoDeInit
 <LI><a href="#[216]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[1ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit1
 </UL>
 
@@ -891,6 +892,7 @@ Global Symbols
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HW_GpioInit
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vcom_IoInit
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vcom_IoDeInit
+<LI><a href="#[1ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit1
 </UL>
 
@@ -1208,8 +1210,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 
-<P><STRONG><a name="[107]"></a>HAL_UART_MspInit1</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, main.o(i.HAL_UART_MspInit1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = HAL_UART_MspInit1 &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[107]"></a>HAL_UART_MspInit1</STRONG> (Thumb, 106 bytes, Stack size 40 bytes, main.o(i.HAL_UART_MspInit1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = HAL_UART_MspInit1 &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
@@ -2258,11 +2260,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HW_GPIO_SetIrq
 </UL>
 
-<P><STRONG><a name="[1ab]"></a>MX_USART1_UART_Init</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, main.o(i.MX_USART1_UART_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = MX_USART1_UART_Init &rArr; Error_Handler &rArr; TraceSend &rArr; vcom_Trace &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
+<P><STRONG><a name="[1ab]"></a>MX_USART1_UART_Init</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, main.o(i.MX_USART1_UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 412<LI>Call Chain = MX_USART1_UART_Init &rArr; Error_Handler &rArr; TraceSend &rArr; vcom_Trace &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -4244,7 +4248,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[20d]"></a>Send</STRONG> (Thumb, 76 bytes, Stack size 264 bytes, main.o(i.Send))
+<P><STRONG><a name="[20d]"></a>Send</STRONG> (Thumb, 74 bytes, Stack size 264 bytes, main.o(i.Send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 808<LI>Call Chain = Send &rArr; LORA_send &rArr; LoRaMacMcpsRequest &rArr; Send &rArr; ScheduleTx &rArr; SecureFrame &rArr; LoRaMacCryptoSecureMessage &rArr; SecureElementComputeAesCmac &rArr; ComputeCmac &rArr; AES_CMAC_Update &rArr; aes_encrypt &rArr; mix_sub_columns
 </UL>
 <BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive

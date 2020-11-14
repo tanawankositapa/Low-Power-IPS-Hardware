@@ -138,8 +138,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 void HAL_UART_MspDeInit(UART_HandleTypeDef *huart)
 {
-  if(huart->Instance==USART2){vcom_IoDeInit();}
-	
+  vcom_IoDeInit();
   /*##-1- Reset peripherals ##################################################*/
   USARTx_FORCE_RESET();
   USARTx_RELEASE_RESET();
