@@ -72,6 +72,3 @@
 .\mlm32l07x01\main.o: ..\LoRaWAN\App\inc\bsp.h
 .\mlm32l07x01\main.o: ..\LoRaWAN\App\inc\version.h
 .\mlm32l07x01\main.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\lora_mac_version.h
-.\mlm32l07x01\main.o: ..\LoRaWAN\App\inc\main.h
-.\mlm32l07x01\main.o: ..\LoRaWAN\App\inc\usart.h
-.\mlm32l07x01\main.o: ..\LoRaWAN\App\inc\main.h
