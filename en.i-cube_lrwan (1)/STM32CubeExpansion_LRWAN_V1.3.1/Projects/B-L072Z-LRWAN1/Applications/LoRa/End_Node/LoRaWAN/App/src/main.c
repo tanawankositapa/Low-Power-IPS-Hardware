@@ -27,6 +27,7 @@
 #include "version.h"
 
 /* Private typedef -----------------------------------------------------------*/
+#include "main.h"
 /* Private define ------------------------------------------------------------*/
 
 #define LORAWAN_MAX_BAT   254
@@ -84,6 +85,7 @@ static uint8_t AppDataBuff[LORAWAN_APP_DATA_BUFF_SIZE];
 lora_AppData_t AppData = { AppDataBuff,  0, 0 };
 
 /* Private macro -------------------------------------------------------------*/
+extern UART_HandleTypeDef huart1;
 /* Private function prototypes -----------------------------------------------*/
 
 /* call back when LoRa endNode has received a frame*/
@@ -150,13 +152,18 @@ static  LoRaParam_t LoRaParamInit = {LORAWAN_ADR_STATE,
                                     };
 
 /* Private functions ---------------------------------------------------------*/
-UART_HandleTypeDef huart1;
+void read(void){
+	char RXDATABuffer[256];
+	//MX_USART1_UART_Init();
+	HAL_UART_MspInit(&huart1);
+	
+	HAL_UART_Receive(&huart1,(uint8_t *)&RXDATABuffer,256,30000);
+	sprintf((char*)AppData.Buff,"%s",RXDATABuffer);
+	
+	HAL_UART_MspDeInit(&huart1);		
+	
+}
 
-			
-void MX_USART1_UART_Init(void);
-void HAL_UART_MspInit1(UART_HandleTypeDef* uartHandle);
-void HAL_UART_MspDeInit1(UART_HandleTypeDef* uartHandle);	
-																		
 /**
   * @brief  Main program
   * @param  None
@@ -178,7 +185,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 	MX_USART1_UART_Init();
-	HAL_UART_MspInit1(&huart1);
   /* USER CODE END 1 */
 
   /*Disbale Stand-by mode*/
@@ -196,6 +202,7 @@ int main(void)
 
   while (1)
   {
+		read();
     if (AppProcessRequest == LORA_SET)
     {
       /*reset notification flag*/
@@ -251,7 +258,6 @@ static void Send(void *context)
   uint16_t humidity = 0;
   uint8_t batteryLevel;
   sensor_t sensor_data;
-	char RXDATABuffer[256];
   if (LORA_JoinStatus() != LORA_SET)
   {
     /*Not joined, try again later*/
@@ -259,9 +265,9 @@ static void Send(void *context)
     return;
   }
 //char message[] = "Hello World!";
- HAL_UART_Receive(&huart1,(uint8_t*)&RXDATABuffer,256,30000);
+ //HAL_UART_Receive_IT(&huart1,(uint8_t*)&RXDATABuffer,256);
  //set message to AppData.Buff
- sprintf((char*)AppData.Buff,"%s",RXDATABuffer);
+ //sprintf((char*)AppData.Buff,"%s",RXDATABuffer);
  
  //show in Tera Term
  PRINTF((char*)AppData.Buff);
@@ -438,118 +444,3 @@ static void OnTimerLedEvent(void *context)
 }
 #endif
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-
-//////////////////////////////////////////
-
-void MX_USART1_UART_Init(void)
-{
-
-  	__HAL_RCC_USART1_CLK_ENABLE();
-  
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-    /**USART1 GPIO Configuration    
-    PB6     ------> USART1_TX
-    PA10     ------> USART1_RX 
-    */
-	GPIO_InitTypeDef GPIO_InitStruct = {0};
-  GPIO_InitStruct.Pin = GPIO_PIN_6;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF0_USART1;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  GPIO_InitStruct.Pin = GPIO_PIN_10;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF4_USART1;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-	
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-/* USART2 init function */
-
-void HAL_UART_MspInit1(UART_HandleTypeDef* uartHandle)
-{
-
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(uartHandle->Instance==USART1)
-  {
-  /* USER CODE BEGIN USART1_MspInit 0 */
-
-  /* USER CODE END USART1_MspInit 0 */
-    /* USART1 clock enable */
-    __HAL_RCC_USART1_CLK_ENABLE();
-  
-    __HAL_RCC_GPIOB_CLK_ENABLE();
-    __HAL_RCC_GPIOA_CLK_ENABLE();
-    /**USART1 GPIO Configuration    
-    PB6     ------> USART1_TX
-    PA10     ------> USART1_RX 
-    */
-    GPIO_InitStruct.Pin = GPIO_PIN_6;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF0_USART1;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_10;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF4_USART1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /* USER CODE BEGIN USART1_MspInit 1 */
-
-  /* USER CODE END USART1_MspInit 1 */
-  }
-
-
-}
-
-void HAL_UART_MspDeInit1(UART_HandleTypeDef* uartHandle)
-{
-
-  if(uartHandle->Instance==USART1)
-  {
-  /* USER CODE BEGIN USART1_MspDeInit 0 */
-
-  /* USER CODE END USART1_MspDeInit 0 */
-    /* Peripheral clock disable */
-    __HAL_RCC_USART1_CLK_DISABLE();
-  
-    /**USART1 GPIO Configuration    
-    PB6     ------> USART1_TX
-    PA10     ------> USART1_RX 
-    */
-    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_6);
-
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_10);
-
-  /* USER CODE BEGIN USART1_MspDeInit 1 */
-
-  /* USER CODE END USART1_MspDeInit 1 */
-  }
-
-} 
-
-/* USER CODE BEGIN 1 */
-

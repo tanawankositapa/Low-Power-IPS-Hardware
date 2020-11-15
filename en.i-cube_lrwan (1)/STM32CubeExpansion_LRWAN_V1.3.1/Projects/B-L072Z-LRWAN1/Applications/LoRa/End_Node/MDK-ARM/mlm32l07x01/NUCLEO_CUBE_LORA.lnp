@@ -42,6 +42,7 @@
 ".\mlm32l07x01\mlm32l0xx_hal_msp.o"
 ".\mlm32l07x01\mlm32l0xx_hw.o"
 ".\mlm32l07x01\mlm32l0xx_it.o"
+".\mlm32l07x01\usart.o"
 ".\mlm32l07x01\lora.o"
 ".\mlm32l07x01\lora-test.o"
 ".\mlm32l07x01\loramac.o"
