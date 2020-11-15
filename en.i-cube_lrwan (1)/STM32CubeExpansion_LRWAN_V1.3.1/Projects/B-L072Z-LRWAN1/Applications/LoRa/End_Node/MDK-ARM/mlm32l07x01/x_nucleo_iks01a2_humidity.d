@@ -3,9 +3,9 @@
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\hts221\HTS221_Driver_HL.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\Common\humidity.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\Common\sensor.h
-.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: D:\Keli\ARM\ARMCC\Bin\..\include\string.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\Common\component.h
-.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\Common\temperature.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\Components\hts221\HTS221_Driver.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\BSP\X_NUCLEO_IKS01A2\x_nucleo_iks01a2.h
@@ -23,7 +23,7 @@
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\mlm32l07x01\x_nucleo_iks01a2_humidity.o: D:\Keli\ARM\ARMCC\Bin\..\include\stddef.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h
 .\mlm32l07x01\x_nucleo_iks01a2_humidity.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h

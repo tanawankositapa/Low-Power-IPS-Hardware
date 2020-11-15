@@ -1,9 +1,9 @@
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Crypto\soft-se.c
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\secure-element.h
-.\mlm32l07x01\soft-se.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mlm32l07x01\soft-se.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\LoRaMacCrypto.h
-.\mlm32l07x01\soft-se.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\mlm32l07x01\soft-se.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\mlm32l07x01\soft-se.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdlib.h
+.\mlm32l07x01\soft-se.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdbool.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\utilities.h
 .\mlm32l07x01\soft-se.o: ..\LoRaWAN\App\inc\hw_conf.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
@@ -20,7 +20,7 @@
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-.\mlm32l07x01\soft-se.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\mlm32l07x01\soft-se.o: D:\Keli\ARM\ARMCC\Bin\..\include\stddef.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h
 .\mlm32l07x01\soft-se.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h

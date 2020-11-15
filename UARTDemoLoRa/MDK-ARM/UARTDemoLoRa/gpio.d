@@ -8,7 +8,7 @@ uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Include/core_cm4.h
-uartdemolora\gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+uartdemolora\gpio.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Include/cmsis_version.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ uartdemolora\gpio.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 uartdemolora\gpio.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-uartdemolora\gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+uartdemolora\gpio.o: D:\Keli\ARM\ARMCC\Bin\..\include\stddef.h
 uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 uartdemolora\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h

@@ -1,9 +1,9 @@
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\timeServer.c
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\time.h
 .\mlm32l07x01\timeserver.o: ..\LoRaWAN\App\inc\hw.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\math.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdbool.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
 .\mlm32l07x01\timeserver.o: ..\LoRaWAN\App\inc\hw_conf.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 .\mlm32l07x01\timeserver.o: ..\Core\inc\stm32l0xx_hal_conf.h
@@ -19,7 +19,7 @@
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\stddef.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h
@@ -43,7 +43,7 @@
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\BSP\B-L072Z-LRWAN1\b-l072z-lrwan1.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdlib.h
 .\mlm32l07x01\timeserver.o: ..\Core\inc\mlm32l0xx_hw_conf.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_ll_rtc.h
 .\mlm32l07x01\timeserver.o: ..\LoRaWAN\App\inc\hw_gpio.h
@@ -57,6 +57,6 @@
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\util_console.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\systime.h
 .\mlm32l07x01\timeserver.o: ..\LoRaWAN\App\inc\debug.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\mlm32l07x01\timeserver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\string.h
+.\mlm32l07x01\timeserver.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdio.h
 .\mlm32l07x01\timeserver.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\timeServer.h

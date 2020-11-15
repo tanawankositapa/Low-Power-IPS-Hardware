@@ -153,14 +153,20 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void MacAndRSSI(void){
-	char buffer[100],n;
+	char buffer[256],n;
 	for(int i=0;i<6;i++){
-		n = sprintf(buffer,"MAC:0x%02x:%02x:%02x:%02x:%02x:%02x , ",rand()%255,rand()%255,rand()%255,rand()%255,rand()%255,rand()%255);
-		n += sprintf(buffer,"RSSI:%d\n\r",rand()%100*-1);
+		n += sprintf(buffer+n,"MAC:%02x:%02x:%02x:%02x:%02x:%02x , ",rand()%256,rand()%256,rand()%256,rand()%256,rand()%256,rand()%256);
+		n += sprintf(buffer+n,"RSSI:%d\n\r",rand()%100*-1);
 	}
+	n += sprintf(buffer+n,"\n");
+	char test[256],rx[256];
 	while(__HAL_UART_GET_FLAG(&huart2,UART_FLAG_TC)== RESET){}
-		HAL_UART_Transmit(&huart2,(uint8_t*)buffer,strlen(buffer),1000);
-		HAL_Delay(1000);
+		HAL_UART_Transmit(&huart2,(uint8_t*)buffer,strlen(buffer),10000);
+		HAL_Delay(10000);
+//	HAL_UART_Receive(&huart2,(uint8_t*) &rx,256,1000);
+//	n = sprintf(test,"Rx: %s",rx);
+//	HAL_UART_Transmit(&huart2,(uint8_t*)test,strlen(test),1000);
+//	HAL_Delay(1000);
 }
 /* USER CODE END 4 */
 

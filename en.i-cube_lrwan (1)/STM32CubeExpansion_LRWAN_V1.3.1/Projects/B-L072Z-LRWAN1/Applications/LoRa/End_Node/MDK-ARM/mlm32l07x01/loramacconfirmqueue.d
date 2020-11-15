@@ -1,7 +1,7 @@
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\LoRaMacConfirmQueue.c
-.\mlm32l07x01\loramacconfirmqueue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\mlm32l07x01\loramacconfirmqueue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\mlm32l07x01\loramacconfirmqueue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\mlm32l07x01\loramacconfirmqueue.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
+.\mlm32l07x01\loramacconfirmqueue.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdbool.h
+.\mlm32l07x01\loramacconfirmqueue.o: D:\Keli\ARM\ARMCC\Bin\..\include\stddef.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\timer.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\timeServer.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\utilities.h
@@ -43,7 +43,7 @@
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Drivers\BSP\B-L072Z-LRWAN1\b-l072z-lrwan1.h
-.\mlm32l07x01\loramacconfirmqueue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\mlm32l07x01\loramacconfirmqueue.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdlib.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\Core\inc\mlm32l0xx_hw_conf.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_ll_rtc.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\trace.h
@@ -51,7 +51,7 @@
 .\mlm32l07x01\loramacconfirmqueue.o: ..\LoRaWAN\App\inc\vcom.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\LoRaMac.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Utilities\systime.h
-.\mlm32l07x01\loramacconfirmqueue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\mlm32l07x01\loramacconfirmqueue.o: D:\Keli\ARM\ARMCC\Bin\..\include\time.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Phy\radio.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\LoRaMacTypes.h
 .\mlm32l07x01\loramacconfirmqueue.o: ..\..\..\..\..\..\Middlewares\Third_Party\LoRaWAN\Mac\region/Region.h

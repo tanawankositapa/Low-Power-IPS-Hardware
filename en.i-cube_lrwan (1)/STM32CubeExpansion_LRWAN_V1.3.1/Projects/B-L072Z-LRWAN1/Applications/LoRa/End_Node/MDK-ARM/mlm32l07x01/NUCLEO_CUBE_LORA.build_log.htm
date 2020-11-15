@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.28.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Thongthai Saksopit KMITL Flex license: MDK Professional 5.28 (Flex) (mdk_pro) Borrow: 31 Dec 2020
+License Information: rq Fantasticboy, Hewlett-Packard, LIC=X1E45-GBWHX-RF4IZ-JQCP8-73GTM-HFM9Q
  
 Tool Versions:
-Toolchain:       MDK Professional 5.28 (Flex)  Version: 5.28.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  D:\Keli\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 6 (build 750)
 Assembler:       Armasm.exe V5.06 update 6 (build 750)
 Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
@@ -21,11 +21,11 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
-D:\Gitup\Low-Power-IPS-Hardware\en.i-cube_lrwan (1)\STM32CubeExpansion_LRWAN_V1.3.1\Projects\B-L072Z-LRWAN1\Applications\LoRa\End_Node\MDK-ARM\Lora.uvprojx
+D:\Work\Project\Github\Low-Power-IPS-Hardware\en.i-cube_lrwan (1)\STM32CubeExpansion_LRWAN_V1.3.1\Projects\B-L072Z-LRWAN1\Applications\LoRa\End_Node\MDK-ARM\Lora.uvprojx
 Project File Date:  11/14/2020
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keli\ARM\ARMCC\Bin'
 Build target 'mlm32l07x01'
 compiling main.c...
 ..\LoRaWAN\App\src\main.c(249): warning:  #177-D: variable "pressure"  was declared but never referenced
@@ -38,29 +38,31 @@ compiling main.c...
     uint8_t batteryLevel;
 ..\LoRaWAN\App\src\main.c(253): warning:  #177-D: variable "sensor_data"  was declared but never referenced
     sensor_t sensor_data;
+..\LoRaWAN\App\src\main.c(254): warning:  #177-D: variable "RXDATABuffer"  was declared but never referenced
+  	char RXDATABuffer[256];
 ..\LoRaWAN\App\src\main.c(141): warning:  #177-D: variable "TxLedTimer"  was declared but never referenced
   static TimerEvent_t TxLedTimer;
-..\LoRaWAN\App\src\main.c(435): warning:  #177-D: function "OnTimerLedEvent"  was declared but never referenced
+..\LoRaWAN\App\src\main.c(442): warning:  #177-D: function "OnTimerLedEvent"  was declared but never referenced
   static void OnTimerLedEvent(void *context)
-..\LoRaWAN\App\src\main.c: 7 warnings, 0 errors
+..\LoRaWAN\App\src\main.c: 8 warnings, 0 errors
 linking...
-Program Size: Code=51300 RO-data=1876 RW-data=320 ZI-data=6592  
+Program Size: Code=50740 RO-data=2132 RW-data=320 ZI-data=6784  
 FromELF: creating hex file...
-".\mlm32l07x01\NUCLEO_CUBE_LORA.axf" - 0 Error(s), 7 Warning(s).
+".\mlm32l07x01\NUCLEO_CUBE_LORA.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.0.1.pack
-                Keil.STM32L0xx_DFP.2.0.1
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.1.0.pack
+                Keil.STM32L0xx_DFP.2.1.0
                 STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_mlm32l07x01
-  C:\Users\mone\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+  C:\Users\Fantasticboy\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:17
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

@@ -71,7 +71,7 @@
 /*!
  * User application data buffer size
  */
-#define LORAWAN_APP_DATA_BUFF_SIZE                           64
+#define LORAWAN_APP_DATA_BUFF_SIZE                           256
 /*!
  * User application data
  */
@@ -177,8 +177,8 @@ int main(void)
   HW_Init();
 
   /* USER CODE BEGIN 1 */
-	MX_USART1_UART_Init();
-	HAL_UART_MspInit1(&huart1);
+	//MX_USART1_UART_Init();
+	//HAL_UART_MspInit1(&huart1);
   /* USER CODE END 1 */
 
   /*Disbale Stand-by mode*/
@@ -258,10 +258,17 @@ static void Send(void *context)
     LORA_Join();
     return;
   }
-//char message[] = "Hello World!";
- HAL_UART_Receive(&huart1,(uint8_t*)&RXDATABuffer,256,30000);
- //set message to AppData.Buff
- sprintf((char*)AppData.Buff,"%s",RXDATABuffer);
+
+//	HAL_UART_Transmit(&huart1,(uint8_t*)"5",1,1000);
+//	HAL_Delay(10000);
+char message[256] = "MAC: CE:0E:9E:D9:8F:3B , RSSI: -67 MAC: F6:A0:DA:F5:E3:F3  , RSSI: -68";
+//	char message[] = "1, RSSI:-45";
+ 
+	for(int i=0;i<6;i++){
+		//set message to AppData.Buff
+	sprintf((char*)AppData.Buff,"%s",message);
+	}
+ 
  
  //show in Tera Term
  PRINTF((char*)AppData.Buff);
@@ -552,4 +559,3 @@ void HAL_UART_MspDeInit1(UART_HandleTypeDef* uartHandle)
 } 
 
 /* USER CODE BEGIN 1 */
-
