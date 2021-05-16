@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_memobj.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\memobj\nrf_memobj.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\memobj\nrf_memobj.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\memobj\nrf_memobj.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\memobj\nrf_memobj.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdlib.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/__crossworks.h \

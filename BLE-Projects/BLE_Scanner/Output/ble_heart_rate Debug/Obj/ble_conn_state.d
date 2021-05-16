@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/ble_conn_state.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\common\ble_conn_state.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\common\ble_conn_state.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\ble\common\ble_conn_state.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\ble\common\ble_conn_state.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble.h \

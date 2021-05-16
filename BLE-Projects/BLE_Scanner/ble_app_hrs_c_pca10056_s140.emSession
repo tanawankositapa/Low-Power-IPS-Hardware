@@ -2,7 +2,7 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="46" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="Board/sensor.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="330" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../nRF5_SDK_current/modules/nrfx/drivers/src/nrfx_gpiote.c" useHWbreakpoint="false"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
@@ -24,23 +24,6 @@
   <ProjectSessionItem path="ble_heart_rate_pca10056_s140"/>
   <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate"/>
   <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;Application"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;Battery Level"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;Board"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;Board Definition"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;Board Support"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;lora_board"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;LoRa_Lib"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;LoRa_Lib;crypto"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;LoRa_Lib;mac"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;LoRa_Lib;radio"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_BLE"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Crypto"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Crypto backend CC310"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Crypto backend nRF HW"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Crypto backend Oberon"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Drivers"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_Libraries"/>
-  <ProjectSessionItem path="ble_heart_rate_pca10056_s140;ble_heart_rate;nRF_TLS"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="ble_heart_rate" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -73,48 +56,27 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/util/sdk_common.h" selected="0" top="26" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="44" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/nrfx_config.h" selected="0" top="17" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="352" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="333" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1272" useTextEdit="1" openedFrom="D:/BLE Projects/ble_heart_rate/main.c" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h" selected="0" top="1260" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/util/app_error_weak.c" selected="0" top="82" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/timer/app_timer.h" selected="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="133" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_saadc.h" selected="0" top="110" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="82" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Battery Level/battery_voltage.c" selected="0" top="53" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="127" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="107" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/util/app_error_weak.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="237" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/timer/app_timer.h" selected="0" top="216" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="133" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_saadc.h" selected="0" top="122" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="62" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Battery Level/battery_voltage.c" selected="0" top="41" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="649" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/modules/nrfx/drivers/src/nrfx_saadc.c" selected="0" top="629" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="105" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="app_lora.c" selected="0" top="105" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="19" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Commissioning.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="163" useTextEdit="1" openedFrom="D:/Low-Power-IPS-Hardware/BLE-Projects/BLE_Scanner/app_lora.c" useBinaryEdit="0" left="0" path="Board/custom_board.h" selected="0" top="142" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="47" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/uart/app_uart.h" selected="0" top="33" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="71" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/ble/ble_services/ble_nus/ble_nus.h" selected="0" top="54" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/peripherals/gpio-ioe.c" selected="0" top="36" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="100" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_rtc.h" selected="0" top="81" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/gpio-board.h" selected="0" top="12" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/app_config.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/board.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="632" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/mac/LoRaMac.c" selected="0" top="617" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_rtc.h" selected="0" top="41" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/rtc-board.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/spi-board.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="39" y="527" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.h" selected="0" top="521" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5738" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="sdk_config.h" selected="0" top="5728" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/mac/LoRaMac.h" selected="0" top="1939" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/external/mbedtls/library/aes.c" selected="0" top="297" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="24" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/mac/LoRaMacCrypto.c" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/mac/LoRaMacTest.h" selected="0" top="66" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="95" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/mac/LoRaMacCrypto.h" selected="0" top="75" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/sx1276-board.h" selected="0" top="42" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="2" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/sx1276-board.c" selected="0" top="2" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="LoRa_Lib/crypto/cmac.c" selected="0" top="138" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h" selected="0" top="48" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1817" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/sx1276.c" selected="0" top="126" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="137" useTextEdit="1" openedFrom="D:/Work/Project/Github/Low-Power-IPS-Hardware/BLE-Projects/nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.h" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_spi.h" selected="0" top="132" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="214" useTextEdit="1" openedFrom="D:/Work/Project/Github/Low-Power-IPS-Hardware/BLE-Projects/nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.h" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_spim.h" selected="0" top="199" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/sx1276.h" selected="0" top="114" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/timer/app_timer2.c" selected="0" top="53" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="92" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/fds/fds_internal_defs.h" selected="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="81" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/softdevice/common/nrf_sdh_ble.h" selected="0" top="68" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="50" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="Board/lora_board/board.h" selected="1" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="791" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/modules/nrfx/drivers/src/nrfx_gpiote.c" selected="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="735" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/log/src/nrf_log_frontend.c" selected="0" top="697" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="189" useTextEdit="1" openedFrom="C:/Users/mone/Downloads/BLE-Projects (1)/BLE_Scanner/main.c" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/ble/nrf_ble_scan/nrf_ble_scan.h" selected="0" top="179" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/boards/boards.c" selected="0" top="210" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Users/mone/Downloads/BLE-Projects (1)/BLE_Scanner/main.c" useBinaryEdit="0" left="0" path="sdk_config.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="107" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/integration/nrfx/legacy/nrf_drv_spi.c" selected="0" top="84" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="161" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/util/app_error.h" selected="0" top="137" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="89" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/memobj/nrf_memobj.c" selected="0" top="73" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="279" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/balloc/nrf_balloc.c" selected="0" top="263" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="236" useTextEdit="1" openedFrom="D:/Work/Project/Nescesary/Low-Power-IPS-Hardware-960a12d4d72c1147cf71ca8733825c0ca7e58ea8/BLE-Projects/BLE_Scanner/main.c" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/uart/app_uart.h" selected="0" top="215" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="220" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/uart/app_uart_fifo.c" selected="0" top="210" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/util/nordic_common.h" selected="0" top="60" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="41" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/fifo/app_fifo.c" selected="0" top="30" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" openedFrom="D:/Work/Project/Nescesary/Low-Power-IPS-Hardware-960a12d4d72c1147cf71ca8733825c0ca7e58ea8/BLE-Projects/BLE_Scanner/main.c" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/libraries/log/nrf_log_default_backends.h" selected="0" top="51" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="188" useTextEdit="1" openedFrom="C:/Users/mone/Downloads/BLE-Projects (1)/BLE_Scanner/main.c" useBinaryEdit="0" left="0" path="../nRF5_SDK_current/components/softdevice/s140/headers/ble_types.h" selected="0" top="185" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_heart_rate" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Low-Power-IPS-Hardware/BLE-Projects/BLE_Scanner/LoRa_Lib/crypto" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="ble_heart_rate" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="D:/Low Power Platform/Low-Power-IPS-Hardware/BLE-Projects/nRF5_SDK_current/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;D:/Work/Project/Github/Low-Power-IPS-Hardware/BLE-Projects/nRF5_SDK_current/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/source/thumb_crt0.s&#xa;&#xa;D:/Work/Project/Nescesary/Low-Power-IPS-Hardware-960a12d4d72c1147cf71ca8733825c0ca7e58ea8/BLE-Projects/nRF5_SDK_current/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;D:/Low-Power-IPS-Hardware-original/BLE-Projects/nRF5_SDK_current/modules/nrfx/mdk/ses_startup_nrf_common.s" fileDialogInitialDirectory="D:/Low-Power-IPS-Hardware-original/BLE-Projects/nRF5_SDK_current/modules/nrfx/mdk" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

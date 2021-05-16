@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/ble_advdata.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\common\ble_advdata.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\common\ble_advdata.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\ble\common\ble_advdata.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\ble\common\ble_advdata.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
@@ -42,7 +42,7 @@ Output/ble_heart_rate\ Debug/Obj/ble_advdata.o: \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gap.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\ble\common\ble_srv_common.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\ble\common\ble_srv_common.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_types.h \
  ../nRF5_SDK_current/components/libraries/util/app_util.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/ble_gatt.h

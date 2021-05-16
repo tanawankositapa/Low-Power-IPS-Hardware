@@ -41,13 +41,7 @@
 #ifndef NRF_DRV_SPI_H__
 #define NRF_DRV_SPI_H__
 
-#define SPI0_INSTANCE_INDEX 0
-#define SPI0_IRQ            SPI0_TWI0_IRQn
-#define SPI0_IRQ_HANDLER    SPI0_TWI0_IRQHandler
-
 #include <nrfx.h>
-#include <nrfx_spim.h>
-#include <nrfx_spi.h>
 #ifdef SPIM_PRESENT
     #include <nrfx_spim.h>
 #else
@@ -88,7 +82,6 @@
     #define NRF_SPI_MODE_3              NRF_SPIM_MODE_3
     #define NRF_SPI_BIT_ORDER_MSB_FIRST NRF_SPIM_BIT_ORDER_MSB_FIRST
     #define NRF_SPI_BIT_ORDER_LSB_FIRST NRF_SPIM_BIT_ORDER_LSB_FIRST
-
 #endif
 
 #ifdef __cplusplus
@@ -117,11 +110,7 @@ typedef struct
         nrfx_spi_t  spi;
 #endif
     } u;
-    
-    void *    p_registers;  ///< Pointer to the structure with SPI/SPIM peripheral instance registers.
-    IRQn_Type irq;          ///< SPI/SPIM peripheral instance IRQ number.
-    uint8_t   drv_inst_idx; ///< Driver instance index.
-    bool      use_easy_dma; ///< True if the peripheral with EasyDMA (SPIM) shall be used.
+    bool    use_easy_dma;
 } nrf_drv_spi_t;
 
 /**
@@ -129,10 +118,10 @@ typedef struct
  */
 #define NRF_DRV_SPI_INSTANCE(id)    NRF_DRV_SPI_INSTANCE_(id)
 #define NRF_DRV_SPI_INSTANCE_(id)   NRF_DRV_SPI_INSTANCE_ ## id
-#if !NRFX_CHECK(NRFX_SPIM0_ENABLED)
+#if NRFX_CHECK(NRFX_SPIM0_ENABLED)
     #define NRF_DRV_SPI_INSTANCE_0 \
         { 0, { .spim = NRFX_SPIM_INSTANCE(0) }, true }
-#elif !NRFX_CHECK(NRFX_SPI0_ENABLED)
+#elif NRFX_CHECK(NRFX_SPI0_ENABLED)
     #define NRF_DRV_SPI_INSTANCE_0 \
         { 0, { .spi = NRFX_SPI_INSTANCE(0) }, false }
 #endif
@@ -218,7 +207,6 @@ typedef struct
     nrf_drv_spi_mode_t      mode;      ///< SPI mode.
     nrf_drv_spi_bit_order_t bit_order; ///< SPI bit order.
 } nrf_drv_spi_config_t;
-
 
 /**
  * @brief SPI master instance default configuration.
@@ -507,22 +495,22 @@ ret_code_t nrf_drv_spi_transfer(nrf_drv_spi_t const * const p_instance,
                                 uint8_t         rx_buffer_length)
 {
     ret_code_t result = 0;
-//    if (NRF_DRV_SPI_USE_SPIM)
-//    {
-//    #ifdef SPIM_PRESENT
-//        nrfx_spim_xfer_desc_t const spim_xfer_desc =
-//        {
-//            .p_tx_buffer = p_tx_buffer,
-//            .tx_length   = tx_buffer_length,
-//            .p_rx_buffer = p_rx_buffer,
-//            .rx_length   = rx_buffer_length,
-//        };
-//        result = nrfx_spim_xfer(&p_instance->u.spim, &spim_xfer_desc, 0);
-//    #endif
-//    }
-    if (NRF_DRV_SPI_USE_SPI)
+    if (NRF_DRV_SPI_USE_SPIM)
     {
-   #ifdef SPI_PRESENT
+    #ifdef SPIM_PRESENT
+        nrfx_spim_xfer_desc_t const spim_xfer_desc =
+        {
+            .p_tx_buffer = p_tx_buffer,
+            .tx_length   = tx_buffer_length,
+            .p_rx_buffer = p_rx_buffer,
+            .rx_length   = rx_buffer_length,
+        };
+        result = nrfx_spim_xfer(&p_instance->u.spim, &spim_xfer_desc, 0);
+    #endif
+    }
+    else if (NRF_DRV_SPI_USE_SPI)
+    {
+    #ifdef SPI_PRESENT
         nrfx_spi_xfer_desc_t const spi_xfer_desc =
         {
             .p_tx_buffer = p_tx_buffer,
@@ -531,7 +519,7 @@ ret_code_t nrf_drv_spi_transfer(nrf_drv_spi_t const * const p_instance,
             .rx_length   = rx_buffer_length,
         };
         result = nrfx_spi_xfer(&p_instance->u.spi, &spi_xfer_desc, 0);
-   #endif
+    #endif
     }
     return result;
 }

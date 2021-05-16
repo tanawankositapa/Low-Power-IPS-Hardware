@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_log_default_backends.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\log\src\nrf_log_default_backends.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\log\src\nrf_log_default_backends.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -51,7 +51,6 @@ Output/ble_heart_rate\ Debug/Obj/nrf_log_default_backends.o: \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_instance.h \
  ../nRF5_SDK_current/components/libraries/experimental_section_vars/nrf_section.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\log\src\nrf_log_internal.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\log\src\nrf_log_internal.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log_types.h \
- ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- ../nRF5_SDK_current/components/libraries/log/nrf_log_backend_uart.h
+ ../nRF5_SDK_current/components/libraries/util/nrf_assert.h

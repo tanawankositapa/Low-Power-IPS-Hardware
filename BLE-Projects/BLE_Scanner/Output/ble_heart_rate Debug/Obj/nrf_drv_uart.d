@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_drv_uart.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_uart.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_uart.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_uart.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\integration\nrfx\legacy\nrf_drv_uart.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \

@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrfx_uart.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\drivers\src\nrfx_uart.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\modules\nrfx\drivers\src\nrfx_uart.c \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \
@@ -53,7 +53,7 @@ Output/ble_heart_rate\ Debug/Obj/nrfx_uart.o: \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_errors.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/include/nrfx_uart.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_uart.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\drivers\src\prs/nrfx_prs.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\modules\nrfx\drivers\src\prs/nrfx_prs.h \
  ../nRF5_SDK_current/modules/nrfx/hal/nrf_gpio.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_log.h \
  ../nRF5_SDK_current/components/libraries/log/nrf_log.h \

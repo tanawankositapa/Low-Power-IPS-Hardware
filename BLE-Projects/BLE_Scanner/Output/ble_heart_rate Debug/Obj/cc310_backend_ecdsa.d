@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/cc310_backend_ecdsa.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdsa.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdsa.c \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
@@ -56,9 +56,9 @@ Output/ble_heart_rate\ Debug/Obj/cc310_backend_ecdsa.o: \
  ../nRF5_SDK_current/components/libraries/crypto/backend/oberon/oberon_backend_ecdsa.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecdsa.h \
  ../nRF5_SDK_current/components/libraries/crypto/backend/optiga/optiga_backend_ecdsa.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdsa.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdsa.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../nRF5_SDK_current/components/libraries/mutex/nrf_mtx.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \

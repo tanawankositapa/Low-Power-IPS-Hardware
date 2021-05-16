@@ -87,7 +87,7 @@ typedef struct
     .cc_channel_count = NRF_RTC_CC_CHANNEL_COUNT(id),           \
 }
 
-//#ifndef __NRFX_DOXYGEN__
+#ifndef __NRFX_DOXYGEN__
 enum {
 #if NRFX_CHECK(NRFX_RTC0_ENABLED)
     NRFX_RTC0_INST_IDX,
@@ -95,12 +95,12 @@ enum {
 #if NRFX_CHECK(NRFX_RTC1_ENABLED)
     NRFX_RTC1_INST_IDX,
 #endif
-//#if NRFX_CHECK(NRFX_RTC2_ENABLED)
+#if NRFX_CHECK(NRFX_RTC2_ENABLED)
     NRFX_RTC2_INST_IDX,
-//#endif
-   // NRFX_RTC_ENABLED_COUNT
+#endif
+    NRFX_RTC_ENABLED_COUNT
 };
-//#endif
+#endif
 
 /** @brief RTC driver instance configuration structure. */
 typedef struct

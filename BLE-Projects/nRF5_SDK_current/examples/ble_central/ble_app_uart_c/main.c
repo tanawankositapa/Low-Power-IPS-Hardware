@@ -83,7 +83,7 @@ NRF_BLE_GQ_DEF(m_ble_gatt_queue,                                        /**< BLE
                NRF_BLE_GQ_QUEUE_SIZE);
 
 static uint16_t m_ble_nus_max_data_len = BLE_GATT_ATT_MTU_DEFAULT - OPCODE_LENGTH - HANDLE_LENGTH; /**< Maximum length of data (in bytes) that can be transmitted to the peer by the Nordic UART service module. */
-
+static const ble_uuid128_t m_target_beacon = {0xFD,0xA5,0x06,0x93,0xA4,0xE2,0x4F,0xB1,0xAF,0xCF,0xC6,0xEB,0x07,0x64,0x78,0x25};
 /**@brief NUS UUID. */
 static ble_uuid_t const m_nus_uuid =
 {
@@ -188,7 +188,7 @@ static void scan_init(void)
     err_code = nrf_ble_scan_init(&m_scan, &init_scan, scan_evt_handler);
     APP_ERROR_CHECK(err_code);
 
-    err_code = nrf_ble_scan_filter_set(&m_scan, SCAN_UUID_FILTER, &m_nus_uuid);
+    err_code = nrf_ble_scan_filter_set(&m_scan, SCAN_UUID_FILTER, &m_target_beacon);
     APP_ERROR_CHECK(err_code);
 
     err_code = nrf_ble_scan_filters_enable(&m_scan, NRF_BLE_SCAN_UUID_FILTER, false);

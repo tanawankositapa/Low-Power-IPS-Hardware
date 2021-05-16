@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_atflags.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_flags\nrf_atflags.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\atomic_flags\nrf_atflags.c \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf.h \
  ../nRF5_SDK_current/modules/nrfx/mdk/nrf52840.h \
  ../nRF5_SDK_current/components/toolchain/cmsis/include/core_cm4.h \
@@ -30,4 +30,4 @@ Output/ble_heart_rate\ Debug/Obj/nrf_atflags.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_svc.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\atomic_flags\nrf_atflags.h
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\atomic_flags\nrf_atflags.h

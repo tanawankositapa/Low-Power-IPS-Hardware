@@ -63,7 +63,7 @@ typedef struct
 } nrfx_spi_t;
 
 enum {
-#if !NRFX_CHECK(NRFX_SPI0_ENABLED)
+#if NRFX_CHECK(NRFX_SPI0_ENABLED)
     NRFX_SPI0_INST_IDX,
 #endif
 #if NRFX_CHECK(NRFX_SPI1_ENABLED)

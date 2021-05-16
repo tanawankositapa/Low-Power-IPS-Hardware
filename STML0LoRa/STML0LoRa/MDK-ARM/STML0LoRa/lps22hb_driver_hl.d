@@ -1,0 +1,10 @@
+stml0lora\lps22hb_driver_hl.o: ..\Drivers\BSP\Components\lps22hb\LPS22HB_Driver_HL.c
+stml0lora\lps22hb_driver_hl.o: ..\Drivers\BSP\Components\lps22hb\LPS22HB_Driver_HL.h
+stml0lora\lps22hb_driver_hl.o: ../Drivers/BSP/Components/Common/pressure.h
+stml0lora\lps22hb_driver_hl.o: ../Drivers/BSP/Components/Common/sensor.h
+stml0lora\lps22hb_driver_hl.o: D:\Keli\ARM\ARMCC\Bin\..\include\string.h
+stml0lora\lps22hb_driver_hl.o: ../Drivers/BSP/Components/Common/component.h
+stml0lora\lps22hb_driver_hl.o: D:\Keli\ARM\ARMCC\Bin\..\include\stdint.h
+stml0lora\lps22hb_driver_hl.o: ../Drivers/BSP/Components/Common/temperature.h
+stml0lora\lps22hb_driver_hl.o: ..\Drivers\BSP\Components\lps22hb\LPS22HB_Driver.h
+stml0lora\lps22hb_driver_hl.o: D:\Keli\ARM\ARMCC\Bin\..\include\math.h

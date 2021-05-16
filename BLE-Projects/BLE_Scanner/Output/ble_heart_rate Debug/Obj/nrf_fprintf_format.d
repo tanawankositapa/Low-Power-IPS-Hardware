@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/nrf_fprintf_format.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\fprintf\nrf_fprintf_format.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\fprintf\nrf_fprintf_format.c \
  ../nRF5_SDK_current/components/libraries/util/sdk_common.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdbool.h \
@@ -31,5 +31,5 @@ Output/ble_heart_rate\ Debug/Obj/nrf_fprintf_format.o: \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdarg.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\fprintf\nrf_fprintf.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\fprintf\nrf_fprintf_format.h
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\fprintf\nrf_fprintf.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\fprintf\nrf_fprintf_format.h

@@ -52,30 +52,19 @@
 #include "ble_advdata.h"
 //#include "ble_bas.h"
 #include "Battery Level/battery_voltage.h"
-
-#include <string.h>
-#include "board.h"
-#include "nordic_common.h"
-#include "nrf.h"
-#include "utils.h"
-#include "ble_hci.h"
-#include "ble_advertising.h"
-#include "ble_db_discovery.h"
-#include "ble_conn_params.h"
-#include "nrf_sdh_soc.h"
-#include "nrf_fstorage.h"
-#include "nrf_ble_gatt.h"
-#include "app_timer.h"
-#include "ble_nus.h"
+#include <sys/time.h>
 #include "app_uart.h"
-#include "app_util_platform.h"
-#include "bsp_btn_ble.h"
-#include "peer_manager.h"
-#include "custom_board.h"
-#include "nrf_drv_twi.h"
-
-Ble_scanRsp_t m_bls_scan_rsp[10];
-uint8_t rspNum = 0;
+#include "app_error.h"
+#include "nrf_delay.h"
+#include "nrf.h"
+#include "bsp.h"
+#if defined (UART_PRESENT)
+#include "nrf_uart.h"
+#endif
+#define MAX_TEST_DATA_BYTES     (15U)                /**< max number of test bytes to be used for tx and rx. */
+#define UART_TX_BUF_SIZE 256                         /**< UART TX buffer size. */
+#define UART_RX_BUF_SIZE 256                         /**< UART RX buffer size. */
+#define UART_HWFC APP_UART_FLOW_CONTROL_DISABLED
 
 #define APP_BLE_CONN_CFG_TAG        1                                   /**< A tag identifying the SoftDevice BLE configuration. */
 #define SCAN_DURATION_WITELIST      3000                                /**< Duration of the scanning in units of 10 milliseconds. */
@@ -86,14 +75,30 @@ NRF_BLE_SCAN_DEF(m_scan);                                           /**< Scannin
 
 #define MAX_ADDRESS_COUNT 100
 
-static const ble_uuid128_t m_target_beacon = {0xFD,0xA5,0x06,0x93,0xA4,0xE2,0x4F,0xB1,0xAF,0xCF,0xC6,0xEB,0x07,0x64,0x78,0x25};
+static const ble_uuid128_t m_target_beacon = {0xAB,0xCD,0xEF,0x01,0x23,0x45,0x67,0x89,0xAB,0xCD,0xEF,0x01,0x23,0x45,0x67,0x89};
 uint8_t uuid128[16];
 uint8_t address_list[MAX_ADDRESS_COUNT][BLE_GAP_ADDR_LEN] = {0};
 int rssi_list[MAX_ADDRESS_COUNT] ={0};
+uint8_t order_address[MAX_ADDRESS_COUNT] = {0};
+int globalRssi = 0;
 int address_list_length = 0;
 
-lora_cfg_t		g_lora_cfg;																													/**< lorab board config param.*/
-bool loraconfigupdataflg = false;
+///////////////////////////////////////////////////////////////////included SPI section
+#include "sdk_config.h"
+#include "nrf_drv_spis.h"
+#include "nrf_drv_spi.h"
+#define SPI_INSTANCE  0 /**< SPI instance index. */
+static const nrf_drv_spi_t spi = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE);  /**< SPI instance. */
+static volatile bool spi_xfer_done;  /**< Flag used to indicate that SPI instance completed the transfer. */
+#define TEST_STRING "Nordic"
+static uint8_t       m_tx_buf[] = TEST_STRING;           /**< TX buffer. */
+static uint8_t       m_rx_buf[sizeof(TEST_STRING) + 1];    /**< RX buffer. */
+static const uint8_t m_length = sizeof(m_tx_buf);        /**< Transfer length. */
+
+#define SPIS_INSTANCE 1 /**< SPIS instance index. */
+static const nrf_drv_spis_t spis = NRF_DRV_SPIS_INSTANCE(SPIS_INSTANCE);/**< SPIS instance. */
+static volatile bool spis_xfer_done; /**< Flag used to indicate that SPIS instance completed the transfer. */
+///////////////////////////////////////////////////////////////////
 
 
 /**< Scan parameters requested for scanning and connection. */
@@ -111,36 +116,6 @@ static ble_gap_scan_params_t const m_scan_param =
  *
  * @details Initializes the SoftDevice and the BLE event interrupt.
  */
- int set_handler(int argc, char* argv[], lora_cfg_t* cfg_info)
-{
-    
-    NRF_LOG_INFO("%s=%s", argv[0], argv[1]);
-    
-    if (strcmp(argv[0], "dev_eui") == 0) {
-        StrToHex((char *)cfg_info->dev_eui, argv[1], 8);
-    }
-    else if (strcmp(argv[0], "app_eui") == 0) {
-        StrToHex((char *)cfg_info->app_eui, argv[1], 8);
-    }
-    else if (strcmp(argv[0], "app_key") == 0) {
-        StrToHex((char *)cfg_info->app_key, argv[1], 16);
-    }
-    else if (strcmp(argv[0], "dev_addr") == 0) {
-        cfg_info->dev_addr = strtoul(argv[1], NULL, 16);
-    }
-    else if (strcmp(argv[0], "nwkskey") == 0) {
-        StrToHex((char *)cfg_info->nwkskey, argv[1], 16);
-    }
-    else if (strcmp(argv[0], "appskey") == 0) {
-        StrToHex((char *)cfg_info->appskey, argv[1], 16);
-    }
-    else
-    {
-        return -1;  
-    }
-    return 0;
-}
-
 static void ble_stack_init(void)
 {
     ret_code_t err_code;
@@ -167,37 +142,6 @@ static void scan_start(void)
     APP_ERROR_CHECK(nrf_ble_scan_start(&m_scan));
 }
 
-void add_scan_rsp_list(const uint8_t* name, const uint8_t* mac, int8_t rssi)
-{
-    uint8_t num = rspNum;
-    uint8_t nullmac[6] = {0};
-    uint8_t i;
-    
-    if (num == 0) {
-        memcpy(m_bls_scan_rsp[0].bleMac, mac, 6);
-        strcpy((char*)m_bls_scan_rsp[0].bleName, (char*)name);
-        m_bls_scan_rsp[0].bleRssi = rssi;
-        rspNum = 1;
-	//printf("add scan_rsp to list 0\r\n");
-    }
-    else if (num < 10) {
-        for(i=0; i<num; i++){
-            if(0 == memcmp(m_bls_scan_rsp[i].bleMac, mac, 6))
-                return;
-            
-            if (0 == memcmp(m_bls_scan_rsp[i].bleMac, nullmac, 6))
-            {
-                memcpy(m_bls_scan_rsp[i].bleMac, mac, 6);
-                strcpy((char*)m_bls_scan_rsp[i].bleName, (char*)name);
-                m_bls_scan_rsp[i].bleRssi = rssi;
-                rspNum++;
-                return;
-                //printf("add scan_rsp to list %d\r\n",i);
-            }
-        }
-    }
-}
-
 bool address_list_contains(const uint8_t address[]) {
     for (int i = 0; i < address_list_length; i++) {
         if (address_list[i][0] == address[0]
@@ -217,6 +161,17 @@ bool address_list_contains(const uint8_t address[]) {
 bool address_list_add(const uint8_t address[]) {
     if (address_list_length < MAX_ADDRESS_COUNT) {
         memcpy(address_list[address_list_length], address, BLE_GAP_ADDR_LEN);
+//        if(address_list[address_list_length][5] == 0xC3 && address_list[address_list_length][4] == 0xD7 && address_list[address_list_length][3] == 0x59 && address_list[address_list_length][2] == 0xEF && address_list[address_list_length][1] == 0x38 && address_list[address_list_length][0] == 0x2E ){
+          if(address_list[address_list_length][5] == 0xE8 && address_list[address_list_length][4] == 0xBA && address_list[address_list_length][3] == 0x41 && address_list[address_list_length][2] == 0x56 && address_list[address_list_length][1] == 0x8D && address_list[address_list_length][0] == 0x9E ){
+          order_address[0] = 0xB1;
+        }else if(address_list[address_list_length][5] == 0xF3 && address_list[address_list_length][4] == 0x45 && address_list[address_list_length][3] == 0x89 && address_list[address_list_length][2] == 0xEF && address_list[address_list_length][1] == 0x19 && address_list[address_list_length][0] == 0x1E ){
+          order_address[1] = 0xB2;
+        }else if(address_list[address_list_length][5] == 0xC3 && address_list[address_list_length][4] == 0xD7 && address_list[address_list_length][3] == 0x59 && address_list[address_list_length][2] == 0xEF && address_list[address_list_length][1] == 0x38 && address_list[address_list_length][0] == 0x2E ){
+          order_address[2] = 0xB3;
+        }else if(address_list[address_list_length][5] == 0xFD && address_list[address_list_length][4] == 0xCC && address_list[address_list_length][3] == 0x03 && address_list[address_list_length][2] == 0x3B && address_list[address_list_length][1] == 0xFB && address_list[address_list_length][0] == 0x50){
+          order_address[3] = 0xB4;
+        }
+        //sendbeacon_data();
     }
 }
 
@@ -228,47 +183,17 @@ void print_address(const ble_gap_evt_adv_report_t* p_adv_report) {
        p_adv_report->peer_addr.addr[2],
        p_adv_report->peer_addr.addr[1],
        p_adv_report->peer_addr.addr[0]);
-}
-
-void print_name(const ble_gap_evt_adv_report_t* p_adv_report) {
-    uint16_t offset = 0;
-    char name[DEV_NAME_LEN] = { 0 };
-    char test[80];
-    
-    //uint16_t length = ble_advdata_search(p_adv_report->data.p_data, p_adv_report->data.len, &offset, BLE_GAP_AD_TYPE_128BIT_SERVICE_UUID_COMPLETE);
-   /* if (length == 0) {
-        // Look for the short local name if it was not found as complete.
-        length = ble_advdata_search(p_adv_report->data.p_data, p_adv_report->data.len, &offset, BLE_GAP_AD_TYPE_SHORT_LOCAL_NAME);
-    }
-    
-    if (length != 0) {
-        memcpy(name, &p_adv_report->data.p_data[offset], length);
-        NRF_LOG_INFO("name: %s", nrf_log_push(name));
-    }*/
-    //memcpy(name, &p_adv_report->data.p_data[offset], length);
-    sprintf(test,"%s",p_adv_report->data.p_data[9]);
-    NRF_LOG_INFO("%s", nrf_log_push(test));
-}
-
-void print_manufacturer_data(const ble_gap_evt_adv_report_t* p_adv_report) {
-    uint16_t offset = 0;
-    uint16_t length = ble_advdata_search(p_adv_report->data.p_data, p_adv_report->data.len, &offset, BLE_GAP_AD_TYPE_MANUFACTURER_SPECIFIC_DATA);
-    
-    if (length != 0) {
-        char data_string[1024] = { 0 };
-        char* pos = data_string;
-        for (int i = 0; i < length && i < 512; i++) {
-            sprintf(pos, "%02x", p_adv_report->data.p_data[offset+i]);
-            pos += 2;
-        }
-        
-        NRF_LOG_INFO("manufacturer data: %s", nrf_log_push(data_string));
-    }
+//    uart_init();
 }
 
 void rssi_list_add(const uint32_t rssi){
+      printf("%d\n",rssi);
       NRF_LOG_INFO("%d",rssi);
       rssi_list[address_list_length] = rssi;
+      globalRssi = rssi;
+      //sendbeacon_data();
+      //uart_init();
+//       NRF_LOG_INFO("%d",globalRssi);
 }
 
 void add_uuid_data(const ble_gap_evt_adv_report_t* p_adv_report){
@@ -276,46 +201,38 @@ void add_uuid_data(const ble_gap_evt_adv_report_t* p_adv_report){
     if(memcmp(uuid128, m_target_beacon.uuid128, 16) == 0){ //if uuid match.
       address_list_add(p_adv_report->peer_addr.addr);
       rssi_list_add(p_adv_report->rssi);
-      print_address(p_adv_report);
+      //print_address(p_adv_report);
       address_list_length++;
     }
+    //address_list_add(p_adv_report->peer_addr.addr);
+    //rssi_list_add(p_adv_report->rssi);
+    //address_list_length++;
 }
 
 void clear_data(){
   memset(address_list,0,sizeof(address_list));
   memset(rssi_list,0,sizeof(rssi_list));
+  memset(order_address,0,sizeof(order_address));
+  address_list_length = 0;
 }
 
-void nRF_lora_init()
-{
-    /* load lora configuration*/
-    u_fs_init();
-    memset((uint8_t*)&g_lora_cfg,0,sizeof(g_lora_cfg));
-    u_fs_read_lora_cfg(&g_lora_cfg);
-    u_fs_check_lora_cfg(&g_lora_cfg);
-    lora_init();
-    printf("LoRa init success.\r\n");
-}
-void power_manage(void)
-{
-    uint32_t err_code = sd_app_evt_wait();
-    APP_ERROR_CHECK(err_code);
-}
 static void scan_evt_handler(scan_evt_t const * p_scan_evt)
 {
+//    printf("Evt handler Init!");
 //  ้ถ้า scan แล้วไม่เจอในเวลาที่กำหนด ให้ timeout แล้ว scan ใหม่
-    if (p_scan_evt->scan_evt_id == NRF_BLE_SCAN_EVT_SCAN_TIMEOUT) {
+    if (p_scan_evt->scan_evt_id == NRF_BLE_SCAN_EVT_SCAN_TIMEOUT || address_list_length == 4) {
         NRF_LOG_INFO("Scan timed out.");
+        sendbeacon_data();
         clear_data();
-        scan_start();
+        scan_start(); 
         return;
     }
 
     if (address_list_contains(p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr) != false)
         return;
     
+    
     add_uuid_data(p_scan_evt->params.filter_match.p_adv_report);
-    add_scan_rsp_list(p_scan_evt->params.filter_match.p_adv_report->data.p_data[9],p_scan_evt->params.filter_match.p_adv_report->peer_addr.addr,p_scan_evt->params.filter_match.p_adv_report->rssi);
 }
 
 /**@brief Function for initialization scanning and setting filters.
@@ -332,42 +249,123 @@ static void scan_init(void)
 
     err_code = nrf_ble_scan_init(&m_scan, &init_scan, scan_evt_handler);
     APP_ERROR_CHECK(err_code);
+    printf("Scan Init!");
 }
 
+void spi_event_handler(nrf_drv_spi_evt_t const * p_event,
+                       void *                    p_context)
+{
+    spi_xfer_done = true;
+    NRF_LOG_INFO("Transfer completed.");
+    if (m_rx_buf[0] != 0)
+    {
+        NRF_LOG_INFO(" Received:");
+        NRF_LOG_HEXDUMP_INFO(m_rx_buf, strlen((const char *)m_rx_buf));
+    }
+}
+void spis_event_handler(nrf_drv_spis_event_t event)
+{
+    if (event.evt_type == NRF_DRV_SPIS_XFER_DONE)
+    {
+        spis_xfer_done = true;
+        NRF_LOG_INFO(" Transfer completed. Received: %s",(uint32_t)m_rx_buf);
+    }
+}
+void uart_error_handle(app_uart_evt_t * p_event)
+{
+    if (p_event->evt_type == APP_UART_COMMUNICATION_ERROR)
+    {
+        APP_ERROR_HANDLER(p_event->data.error_communication);
+    }
+    else if (p_event->evt_type == APP_UART_FIFO_ERROR)
+    {
+        APP_ERROR_HANDLER(p_event->data.error_code);
+    }
+}
 
+void sendbeacon_data(){
+        char buffer[512],n;
+        //itoa(globalRssi, snum, 10);
+        n = sprintf(buffer,"%02x,%d\n\r",order_address[0],rssi_list[0]);
+        for(uint8_t j=1;j<address_list_length;j++){
+        n += sprintf(buffer+n,"%02x,%d\n\r",order_address[j],rssi_list[j]);
+        }//printf("%02x:%02x:%02x:%02x:%02x:%02x",address_list[0][5],address_list[0][4],address_list[0][3],address_list[0][2],address_list[0][1],address_list[0][0]);
+        //printf("%d",globalRssi);
+        n += sprintf(buffer+n,"\n\r");
+        for(uint32_t i=0;i<strlen(buffer);i++){
+        app_uart_put(buffer[i]);
+        nrf_delay_ms(20);
+        }
+        memset(buffer,0,sizeof(buffer));
+}
+
+void uart_init()
+{
+  uint32_t err_code;
+const app_uart_comm_params_t comm_params =
+      {
+          RX_PIN_NUMBER,
+          TX_PIN_NUMBER,
+          RTS_PIN_NUMBER,
+          CTS_PIN_NUMBER,
+          UART_HWFC,
+          false,
+          NRF_UART_BAUDRATE_115200
+      };
+    APP_UART_FIFO_INIT(&comm_params,
+                         UART_RX_BUF_SIZE,
+                         UART_TX_BUF_SIZE,
+                         uart_error_handle,
+                         APP_IRQ_PRIORITY_LOWEST,
+                         err_code);
+
+    APP_ERROR_CHECK(err_code);
+    printf("\r\nUART example started.\r\n");
+
+    
+        uint8_t cr;
+//        int globalRssi = -48;
+       
+//        printf("%c",snum[0]);
+//        app_uart_put(snum[0]);
+//        app_uart_put(snum[1]);
+//        app_uart_put(snum[2]);
+//          app_uart_put('-');
+//        app_uart_put('2');
+//        app_uart_put('8');
+//while(true){
+//        while (app_uart_put(snum[0]) != NRF_SUCCESS);
+//        while (app_uart_put(snum[1]) != NRF_SUCCESS);
+//        while (app_uart_put(snum[2]) != NRF_SUCCESS);
+//        if (cr == 'q' || cr == 'Q')
+//        {
+//            printf(" \r\nExit!\r\n");
+//
+//            while (true)
+//            {
+//                // Do nothing.
+//            }
+//        }
+//    }
+}
 int main(void)
 {
-    ret_code_t err_code;
+    /*ret_code_t err_code;
 
     err_code = NRF_LOG_INIT(NULL);
-//    printf("error : %d",&err_code);
-    APP_ERROR_CHECK(err_code);
-    NRF_LOG_DEFAULT_BACKENDS_INIT(); // print error code that checked from APP_ERROR_CHECK
-
+    APP_ERROR_CHECK(err_code);*/
     ble_stack_init();
     scan_init();
     battery_voltage_init();
-    nRF_lora_init();
-
+    uart_init();
     // Start execution.
     NRF_LOG_INFO("Start scan");
     scan_start();
-
+    
     // Enter main loop.
     for (;;)
     {
-        lora_process();
-
         NRF_LOG_FLUSH();
-        if (!NRF_LOG_PROCESS())
-        {
-            power_manage();
-        }
-        if(loraconfigupdataflg)
-        {
-            u_fs_write_lora_cfg(&g_lora_cfg);
-            loraconfigupdataflg = false;
-        }
 
        
     }

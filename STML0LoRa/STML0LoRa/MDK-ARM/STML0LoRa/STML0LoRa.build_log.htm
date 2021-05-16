@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: rq Fantasticboy, Hewlett-Packard, LIC=X1E45-GBWHX-RF4IZ-JQCP8-73GTM-HFM9Q
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  D:\Keli\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+D:\Downloads\STML0LoRa\STML0LoRa\MDK-ARM\STML0LoRa.uvprojx
+Project File Date:  04/02/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keli\ARM\ARMCC\Bin'
+Build target 'STML0LoRa'
+compiling main.c...
+../Src/main.c(281): warning:  #177-D: variable "pressure"  was declared but never referenced
+    uint16_t pressure = 0;
+../Src/main.c(282): warning:  #177-D: variable "temperature"  was declared but never referenced
+    int16_t temperature = 0;
+../Src/main.c(283): warning:  #177-D: variable "humidity"  was declared but never referenced
+    uint16_t humidity = 0;
+../Src/main.c(284): warning:  #177-D: variable "batteryLevel"  was declared but never referenced
+    uint8_t batteryLevel;
+../Src/main.c(285): warning:  #177-D: variable "sensor_data"  was declared but never referenced
+    sensor_t sensor_data;
+../Src/main.c(152): warning:  #177-D: variable "TxLedTimer"  was declared but never referenced
+  static TimerEvent_t TxLedTimer;
+../Src/main.c(470): warning:  #177-D: function "OnTimerLedEvent"  was declared but never referenced
+  static void OnTimerLedEvent(void *context)
+../Src/main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=51142 RO-data=1874 RW-data=348 ZI-data=6276  
+FromELF: creating hex file...
+"STML0LoRa\STML0LoRa.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.1.0.pack
+                Keil.STM32L0xx_DFP.2.1.0
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STML0LoRa
+  C:\Users\Fantasticboy\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\Fantasticboy\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

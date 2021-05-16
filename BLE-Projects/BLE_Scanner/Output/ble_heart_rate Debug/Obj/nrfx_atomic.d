@@ -1,6 +1,6 @@
 Output/ble_heart_rate\ Debug/Obj/nrfx_atomic.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic.h \
  ../nRF5_SDK_current/modules/nrfx/nrfx.h \
  ../nRF5_SDK_current/integration/nrfx/nrfx_config.h sdk_config.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_common.h \
@@ -52,4 +52,4 @@ Output/ble_heart_rate\ Debug/Obj/nrfx_atomic.o: \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_sd_def.h \
  ../nRF5_SDK_current/components/softdevice/s140/headers/nrf_soc.h \
  ../nRF5_SDK_current/modules/nrfx/drivers/nrfx_errors.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic_internal.h
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\modules\nrfx\soc\nrfx_atomic_internal.h

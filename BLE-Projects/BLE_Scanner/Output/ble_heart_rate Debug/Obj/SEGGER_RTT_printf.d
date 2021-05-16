@@ -1,7 +1,7 @@
 Output/ble_heart_rate\ Debug/Obj/SEGGER_RTT_printf.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_printf.c \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Conf.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_printf.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  ../nRF5_SDK_current/components/libraries/util/app_util_platform.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/stdint.h \

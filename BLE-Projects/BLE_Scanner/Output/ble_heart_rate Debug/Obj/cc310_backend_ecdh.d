@@ -1,5 +1,5 @@
 Output/ble_heart_rate\ Debug/Obj/cc310_backend_ecdh.o: \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdh.c \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdh.c \
  sdk_config.h \
  ../nRF5_SDK_current/components/libraries/util/nordic_common.h \
  D:/nRF_connect_sdk/v1.3.0/toolchain/segger_embedded_studio/include/string.h \
@@ -77,9 +77,9 @@ Output/ble_heart_rate\ Debug/Obj/cc310_backend_ecdh.o: \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_shared.h \
  ../nRF5_SDK_current/components/libraries/util/sdk_macros.h \
  ../nRF5_SDK_current/components/libraries/crypto/nrf_crypto_mem.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../nRF5_SDK_current/components/libraries/mutex/nrf_mtx.h \
  ../nRF5_SDK_current/components/libraries/atomic/nrf_atomic.h \
  ../nRF5_SDK_current/components/libraries/util/nrf_assert.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
- D:\Work\Project\Github\Low-Power-IPS-Hardware\BLE-Projects\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdh.h
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ D:\Downloads\BLE-Projects\ (2)\BLE-Projects\ (1)\nRF5_SDK_current\components\libraries\crypto\backend\cc310\cc310_backend_ecdh.h
